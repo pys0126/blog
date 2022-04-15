@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>UodRad的博客</title>
+  
+  <subtitle>一个菜鸡的日常记录</subtitle>
+  <link href="https://www.uodrad.top/atom.xml" rel="self"/>
+  
+  <link href="https://www.uodrad.top/"/>
+  <updated>2022-01-08T09:45:24.000Z</updated>
+  <id>https://www.uodrad.top/</id>
+  
+  <author>
+    <name>UodRad</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python网易职教云（MooC）刷课</title>
+    <link href="https://www.uodrad.top/cl200n1qk0001jbjxblv876bl-Fuck-Ivce/"/>
+    <id>https://www.uodrad.top/cl200n1qk0001jbjxblv876bl-Fuck-Ivce/</id>
+    <published>2022-01-08T09:45:24.000Z</published>
+    <updated>2022-01-08T09:45:24.000Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Fuck-MooC-Py&quot;&gt;&lt;a href=&quot;#Fuck-MooC-Py&quot; class=&quot;headerlink&quot; title=&quot;Fuck-MooC-Py&quot;&gt;&lt;/a&gt;Fuck-MooC-Py&lt;/h1&gt;&lt;p&gt;利用Python实现网易职教云（MooC）自动刷课和自动查题，代码位于：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://e.coding.net/darkabyss/fuck-icve/Fuck-Icve.git&quot;&gt;Fuck-MooC-Py（国内访问）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/pys0126/Fuck-Icve.git&quot;&gt;Fuck-MooC-Py（国外访问）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目前实现的功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;过PPT&lt;/li&gt;
+&lt;li&gt;自动查题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;预计实现的功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自动答题&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;刷视频&lt;/del&gt;（没研究好视频的反爬机制）&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://www.uodrad.top/categories/Python/"/>
+    
+    <category term="爬虫" scheme="https://www.uodrad.top/categories/Python/%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="Python" scheme="https://www.uodrad.top/tags/Python/"/>
+    
+    <category term="爬虫" scheme="https://www.uodrad.top/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>填安装最新版本Kali-Linux的坑</title>
+    <link href="https://www.uodrad.top/cl200n1ry000djbjx12sv2gsq-page3/"/>
+    <id>https://www.uodrad.top/cl200n1ry000djbjx12sv2gsq-page3/</id>
+    <published>2021-12-17T06:54:25.000Z</published>
+    <updated>2021-12-17T06:54:25.000Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;1.安装20年后版本的Kali-Linux让我踩了好多“坑”，这篇文章能填上大部分的“坑”🤨… &lt;/p&gt;
+&lt;h1 id=&quot;一-Kali安装显示cdrom没挂载解决&quot;&gt;&lt;a href=&quot;#一-Kali安装显示cdrom没挂载解决&quot; class=&quot;headerlink&quot; title=&quot;一.Kali安装显示cdrom没挂载解决&quot;&gt;&lt;/a&gt;一.Kali安装显示cdrom没挂载解决&lt;/h1&gt;&lt;p&gt;1.查看/目录下是否有cdrom,如果没有mkdir cdrom,或者删除rm -rf cdrom ,重新mkdir cdrom &lt;/p&gt;
+&lt;p&gt;2.执行blkid查看U盘的盘符是那个，带有kali live的为kali的镜像&lt;/p&gt;
+&lt;p&gt;3.当前安装的环境镜像U盘设备为/dev/sdb1&lt;/p&gt;
+&lt;p&gt;4.执行挂载命令：</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://www.uodrad.top/categories/Linux/"/>
+    
+    <category term="Kali" scheme="https://www.uodrad.top/categories/Linux/Kali/"/>
+    
+    
+    <category term="Linux" scheme="https://www.uodrad.top/tags/Linux/"/>
+    
+    <category term="Kali" scheme="https://www.uodrad.top/tags/Kali/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu下MySQL“root”用户远程登录配置</title>
+    <link href="https://www.uodrad.top/cl200n1rd0007jbjx6e4ha2mh-page2/"/>
+    <id>https://www.uodrad.top/cl200n1rd0007jbjx6e4ha2mh-page2/</id>
+    <published>2021-12-17T06:50:20.000Z</published>
+    <updated>2021-12-17T06:50:20.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.进入mysql命令行执行：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;shell&quot;&gt;mysql&amp;gt;GRANT ALL PRIVILEGES ON *.* TO &amp;#39;root&amp;#39;@&amp;#39;%&amp;#39; IDENTIFIED BY</summary>
+        
+      
+    
+    
+    
+    <category term="Linux" scheme="https://www.uodrad.top/categories/Linux/"/>
+    
+    <category term="Ubuntu" scheme="https://www.uodrad.top/categories/Linux/Ubuntu/"/>
+    
+    <category term="Mysql" scheme="https://www.uodrad.top/categories/Mysql/"/>
+    
+    
+    <category term="Linux" scheme="https://www.uodrad.top/tags/Linux/"/>
+    
+    <category term="Ubuntu" scheme="https://www.uodrad.top/tags/Ubuntu/"/>
+    
+    <category term="Mysql" scheme="https://www.uodrad.top/tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Python在520给女友微信定时批量发送99条情话</title>
+    <link href="https://www.uodrad.top/cl200n1qx0003jbjx0t3x6auq-page1/"/>
+    <id>https://www.uodrad.top/cl200n1qx0003jbjx0t3x6auq-page1/</id>
+    <published>2021-12-17T06:22:35.000Z</published>
+    <updated>2021-12-17T06:22:35.000Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;阿巴阿巴阿巴&quot;&gt;&lt;a href=&quot;#阿巴阿巴阿巴&quot; class=&quot;headerlink&quot; title=&quot;阿巴阿巴阿巴&quot;&gt;&lt;/a&gt;阿巴阿巴阿巴&lt;/h1&gt;&lt;p&gt;520到了（迟到的详解），如何大批量给女友发情话呢？首先得有情话吧，情话哪里来呢？我找到了一个情话api，请求地址：“&lt;a href=&quot;https://chp.shadiao.app/api.php%E2%80%9D&quot;&gt;https://chp.shadiao.app/api.php”&lt;/a&gt; ，那么如何获取情话通过微信发送给女友呢？请看一下详细步骤&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://www.uodrad.top/categories/Python/"/>
+    
+    <category term="爬虫" scheme="https://www.uodrad.top/categories/Python/%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="Python" scheme="https://www.uodrad.top/tags/Python/"/>
+    
+    <category term="爬虫" scheme="https://www.uodrad.top/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>去TM的学习通</title>
+    <link href="https://www.uodrad.top/cl200n1s2000ejbjxct22ao62-Fuck_CX/"/>
+    <id>https://www.uodrad.top/cl200n1s2000ejbjxct22ao62-Fuck_CX/</id>
+    <published>2021-01-31T18:17:49.000Z</published>
+    <updated>2021-01-31T18:17:49.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;仅支持CQCIVC学院&lt;/strong&gt;，目前的功能：过PPT任务，视频任务（16倍播放需自己设置网课扩展），捕获异常界面要求输入的验证码&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Python" scheme="https://www.uodrad.top/categories/Python/"/>
+    
+    <category term="爬虫" scheme="https://www.uodrad.top/categories/Python/%E7%88%AC%E8%99%AB/"/>
+    
+    
+    <category term="Python" scheme="https://www.uodrad.top/tags/Python/"/>
+    
+    <category term="爬虫" scheme="https://www.uodrad.top/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Manjaro[KDE]安装到使用</title>
+    <link href="https://www.uodrad.top/cl200n1ro000ajbjx545k7fg9-page8/"/>
+    <id>https://www.uodrad.top/cl200n1ro000ajbjx545k7fg9-page8/</id>
+    <published>2020-10-28T04:30:00.000Z</published>
+    <updated>2020-10-28T04:30:00.000Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;折腾基于Arch的Linux发行版：Manjaro-【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括英特尔-英伟达双显卡的驱动问题。&quot;&gt;&lt;a href=&quot;#折腾基于Arch的Linux发行版：Manjaro-【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括英特尔-英伟达双显卡的驱动问题。&quot; class=&quot;headerlink&quot; title=&quot;折腾基于Arch的Linux发行版：Manjaro 【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括英特尔+英伟达双显卡的驱动问题。&quot;&gt;&lt;/a&gt;折腾基于Arch的Linux发行版：Manjaro 【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括&lt;strong&gt;英特尔+英伟达双显卡&lt;/strong&gt;的驱动问题。&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://www.uodrad.top/categories/Linux/"/>
+    
+    <category term="Manjaro" scheme="https://www.uodrad.top/categories/Linux/Manjaro/"/>
+    
+    
+    <category term="Linux" scheme="https://www.uodrad.top/tags/Linux/"/>
+    
+    <category term="Manjaro" scheme="https://www.uodrad.top/tags/Manjaro/"/>
+    
+    <category term="双显卡" scheme="https://www.uodrad.top/tags/%E5%8F%8C%E6%98%BE%E5%8D%A1/"/>
+    
+    <category term="KDE桌面" scheme="https://www.uodrad.top/tags/KDE%E6%A1%8C%E9%9D%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安卓手机免Root安装拥有图形界面的Kali NetHunter</title>
+    <link href="https://www.uodrad.top/cl200n1rk0009jbjx8c9zdgup-page6/"/>
+    <id>https://www.uodrad.top/cl200n1rk0009jbjx8c9zdgup-page6/</id>
+    <published>2020-07-24T05:44:49.000Z</published>
+    <updated>2020-07-24T05:44:49.000Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h3 id=&quot;说明-：安卓版本小于安卓5-0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali-NetHunter是amr64内核。&quot;&gt;&lt;a href=&quot;#说明-：安卓版本小于安卓5-0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali-NetHunter是amr64内核。&quot; class=&quot;headerlink&quot; title=&quot;说明 ：安卓版本小于安卓5.0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali NetHunter是amr64内核。&quot;&gt;&lt;/a&gt;说明 ：安卓版本小于安卓5.0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali NetHunter是amr64内核。&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://www.uodrad.top/categories/Linux/"/>
+    
+    <category term="Kali" scheme="https://www.uodrad.top/categories/Linux/Kali/"/>
+    
+    <category term="安卓" scheme="https://www.uodrad.top/categories/%E5%AE%89%E5%8D%93/"/>
+    
+    
+    <category term="Linux" scheme="https://www.uodrad.top/tags/Linux/"/>
+    
+    <category term="Android" scheme="https://www.uodrad.top/tags/Android/"/>
+    
+    <category term="Kali" scheme="https://www.uodrad.top/tags/Kali/"/>
+    
+  </entry>
+  
+</feed>
