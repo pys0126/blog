@@ -1,472 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Python网易职教云（MooC）刷课</title>
-    <url>/cl200n1qk0001jbjxblv876bl-Fuck-Ivce/</url>
-    <content><![CDATA[<h1 id="Fuck-MooC-Py"><a href="#Fuck-MooC-Py" class="headerlink" title="Fuck-MooC-Py"></a>Fuck-MooC-Py</h1><p>利用Python实现网易职教云（MooC）自动刷课和自动查题，代码位于：</p>
-<ul>
-<li><a href="https://e.coding.net/darkabyss/fuck-icve/Fuck-Icve.git">Fuck-MooC-Py（国内访问）</a></li>
-<li><a href="https://github.com/pys0126/Fuck-Icve.git">Fuck-MooC-Py（国外访问）</a></li>
-</ul>
-<p>目前实现的功能：</p>
-<ul>
-<li>过PPT</li>
-<li>自动查题</li>
-</ul>
-<p>预计实现的功能：</p>
-<ul>
-<li>自动答题</li>
-<li><del>刷视频</del>（没研究好视频的反爬机制）</li>
-</ul>
-<span id="more"></span>
+<!DOCTYPE html>
 
-<h1 id="1-效果"><a href="#1-效果" class="headerlink" title="1.效果"></a>1.效果</h1><p><strong>自动查题：</strong><br><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/HJO%5BTUO%7BZ%25K%7B_%60B4TD%7B%40PUO.png!vip" alt="自动查题"></p>
-<p><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/YL0%252E(%25UC%5BI%24%7DRTW%7DO)L37.png!vip" alt="答题分数"></p>
-<p><strong>过PPT：</strong><br><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/QQ%E6%88%AA%E5%9B%BE20220108175414.png" alt="过ppt"></p>
-<h1 id="2-使用"><a href="#2-使用" class="headerlink" title="2.使用"></a>2.使用</h1><h2 id="2-1-修改必须参数"><a href="#2-1-修改必须参数" class="headerlink" title="2.1 修改必须参数"></a>2.1 修改必须参数</h2><p>下图是需要修改的参数：<br><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/QQ%E6%88%AA%E5%9B%BE20220108192758.png" alt="参数"></p>
-<p><strong>chatiba_cookie：</strong></p>
-<p>去<a href="https://chatiba.com/">查题吧</a>注册一个账户，然后登录在查题吧主页面按F12找到网络选项然后刷新一次网页，点击第一个包，找到cookie，将它的值复制下来填入脚本相应位置。<br><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/QQ%E5%9B%BE%E7%89%8720220108195651.png" alt="chatiba_cookie"></p>
-<p><strong>k_user和k_pwd：</strong><br>就是你的职教云账号和密码，将其填入脚本相应位置。</p>
-<h2 id="2-2-运行"><a href="#2-2-运行" class="headerlink" title="2.2 运行"></a>2.2 运行</h2><p>用python运行脚本后会提示你填入验证码，验证码会在脚本执行的时候保存到脚本当前目录下，名称为：<code>verifycode.png</code>，填入验证码后就可以按照自己的需求选择课程了，如图：</p>
-<p><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/QQ%E6%88%AA%E5%9B%BE20220108174641.png" alt="验证码"></p>
-<p><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/PL_3%60%25U_9W0I%7DFPR3PY~YSE.png" alt="运行"></p>
-<p>上图可以看到默认是启用了自动保存查询答案，想要相应的功能将其取消注释就行，最后两个功能可以配合使用，如图：</p>
-<p><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/1O%60R%40%248HAM61UG1%5DYA7J5.png" alt="配合"></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>爬虫</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Python在520给女友微信定时批量发送99条情话</title>
-    <url>/cl200n1qx0003jbjx0t3x6auq-page1/</url>
-    <content><![CDATA[<h1 id="阿巴阿巴阿巴"><a href="#阿巴阿巴阿巴" class="headerlink" title="阿巴阿巴阿巴"></a>阿巴阿巴阿巴</h1><p>520到了（迟到的详解），如何大批量给女友发情话呢？首先得有情话吧，情话哪里来呢？我找到了一个情话api，请求地址：“<a href="https://chp.shadiao.app/api.php%E2%80%9D">https://chp.shadiao.app/api.php”</a> ，那么如何获取情话通过微信发送给女友呢？请看一下详细步骤</p>
-<span id="more"></span>
 
-<h1 id="请求情话API"><a href="#请求情话API" class="headerlink" title="请求情话API"></a>请求情话API</h1><p>首先得导入<strong>Requests</strong>库，如果没有在cmd安装：<code>pip3 install requests</code>， 然后先创建一个空列表content用于存储情话，创建一个Sessions用于持续访问（在这里其实没用），再将网址赋值给url变量，因为该api使用GET请求，所以使用get方法请求这个api地址，然后用列表的addend方法保存进content，最后自定义一个函数封装，这里我自定义一个parse函数</p>
-<pre><code class="python">import requests
+<html lang="zh-CN">
+  
 
-content = []
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="博客，IT，Python，编程" />
+       
+      <meta name="description" content="一个菜鸡的日常记录" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>华为HCIA（Big Data）培训记录 |  UodRad的博客</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="https://cdn.lovepp.xyz/blog/avatar.png" />
+       
+<link rel="stylesheet" href="/dist/main.css">
 
-def parse():
-    Sessions = requests.session()
-    url = &quot;https://chp.shadiao.app/api.php&quot;
-    re = Sessions.get(url=url)
-    content.append(re.text)
-</code></pre>
-<h1 id="发送微信消息"><a href="#发送微信消息" class="headerlink" title="发送微信消息"></a>发送微信消息</h1><p>导入itchat库提供的微信接口来查找好友并发送消息（该库需要通过pip安装），然后用auto_login方法登录微信，然后添加hotReload参数并赋值为True用于存储登录信息，然后用search_friends方法查找你女友的备注名称并赋值给user，然后用send方法来发送消息，该方法第一个参数是需要发送的信息也就是content列表中的情话，再填入一个toUserName参数为需要发送给谁也就是user的信息，但是user的信息的是一个列表套字典有很多参数，我们只需要第一个字典中的UserName的值：<code>user[0][&quot;UserName&quot;]</code>，最后自定义一个函数封装，这里我自定义一个sen_msg函数，但是需要设置一个获取列表下标的参数，我这里设置为size，因为后面需要循环发送99条，不可能发个情话列表过去吧，所以发送的消息应为：<code>content[size]</code></p>
-<pre><code class="python">import itchat
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+ 
 
-def sen_msg(size):
-    itchat.auto_login(hotReload=True)
-    user = itchat.search_friends(&quot;这里为你女友的备注&quot;)
-    itchat.send(content[size], toUserName=user[0][&quot;UserName&quot;])
-</code></pre>
-<h1 id="启动函数"><a href="#启动函数" class="headerlink" title="启动函数"></a>启动函数</h1><p>用for循环请求99次api，将99条情话存入content，并通过微信发送给女友，最后自定义一个函数封装，这里我自定义一个sen_msg函数</p>
-<pre><code class="python">def run():
-    for i in range(99):
-        parse()
-        sen_msg(size=i)
-</code></pre>
-<h1 id="定时发送"><a href="#定时发送" class="headerlink" title="定时发送"></a>定时发送</h1><p>这里导入一个schedule第三方库（该库需要通过pip安装），该库是个调度器，我们用它来创建一个定时任务，用<code>every().thursday.at(&quot;13:14&quot;).do(run)</code>方法在星期五的13点14分运行run函数，然后用run_pending方法运行在while循环中并每秒检查一次时间，所以需要导入time，用sleep方法等待一秒</p>
-<pre><code class="python">import schedule
-import time
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
 
-schedule.every().thursday.at(&quot;13:14&quot;).do(run)  # 星期四的13:14发一次
-while True:
-    schedule.run_pending()
-    time.sleep(1)
-</code></pre>
-<h1 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h1><p>因为运行sen_msg函数时会登录微信一次，但是在定时的那个时间不一定在电脑前，所以我们将<code>itchat.auto_login(hotReload=True)</code>写在开头，也就是运行该脚本的时候就登录一次，<code>hotReload=True</code>会保存我的登录信息</p>
-<pre><code class="python">import requests
-import schedule
-import itchat
-import time
+      <!-- mermaid -->
+      
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
+    <link rel="alternate" href="/atom.xml" title="UodRad的博客" type="application/atom+xml">
+</head>
+  </html>
+</html>
 
-content = []
-Sessions = requests.session()
-itchat.auto_login(hotReload=True)  # hotReload=True用于存储登录信息
 
-# 请求情话api
-def parse():
-    url = &quot;https://chp.shadiao.app/api.php&quot;
-    re = Sessions.get(url=url)
-    content.append(re.text)
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-2022-4-20"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  华为HCIA（Big Data）培训记录
+</h1>
+ 
 
-# 发送微信消息
-def sen_msg(size):
-    print(content[size])
-    user = itchat.search_friends(&quot;你女友的备注&quot;)
-    itchat.send(content[size], toUserName=user[0][&quot;UserName&quot;])
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/cl27ke84w000030jx2uq5h4yf-2022-4-20/" class="article-date">
+  <time datetime="2022-04-20T06:28:15.000Z" itemprop="datePublished">2022-04-20</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">9.2k</span>
+        </span>
+    </span>
 
-# 启动
-def run():
-    for i in range(99):
-        parse()
-        sen_msg(size=i)
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">33 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
 
-schedule.every().thursday.at(&quot;13:14&quot;).do(run)  # 星期四的13:14发一次
-while True:
-    schedule.run_pending()
-    time.sleep(1)
-</code></pre>
-<p><strong>最终效果</strong>，<a href="https://github.com/pys0126/Python/blob/master/love.py">GitHub地址</a><br><img src="https://img-blog.csdnimg.cn/20210522184007984.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTQxNDQzMw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>爬虫</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ubuntu下MySQL“root”用户远程登录配置</title>
-    <url>/cl200n1rd0007jbjx6e4ha2mh-page2/</url>
-    <content><![CDATA[<p>1.进入mysql命令行执行：</p>
-<pre><code class="shell">mysql&gt;GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;%&#39; IDENTIFIED BY &#39;你的密码&#39; WITH GRANT OPTION;
-mysql&gt;FLUSH PRIVILEGES;
-</code></pre>
-<p>2.然后修改mysql配置文件：vim /etc/mysql/mysql.conf.d/mysqld.cnf，找到并将bind-address =127.0.0.1（大概在44行）注释掉：</p>
-<pre><code class="shell">#bind-address           = 127.0.0.1
-</code></pre>
-<p>3.重启mysql服务，然后就可以远程登录了：</p>
-<pre><code class="shell">$ sudo service mysql restart
-</code></pre>
-]]></content>
-      <categories>
-        <category>Linux</category>
-        <category>Ubuntu</category>
-        <category>Mysql</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Ubuntu</tag>
-        <tag>Mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安卓手机免Root安装拥有图形界面的Kali NetHunter</title>
-    <url>/cl200n1rk0009jbjx8c9zdgup-page6/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="说明-：安卓版本小于安卓5-0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali-NetHunter是amr64内核。"><a href="#说明-：安卓版本小于安卓5-0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali-NetHunter是amr64内核。" class="headerlink" title="说明 ：安卓版本小于安卓5.0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali NetHunter是amr64内核。"></a>说明 ：安卓版本小于安卓5.0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali NetHunter是amr64内核。</h3><span id="more"></span>
-<p><a href="https://wws.lanzous.com/iVJzzf7j24h"><strong>PDF离线教程</strong> </a></p>
-<p><a href="https://wws.lanzous.com/iUpQXexj2ha">termux</a>（必须） </p>
-<p><a href="https://wws.lanzous.com/ik4jJexj2ng">NetHunter Kex</a>（必须） </p>
-<h1 id="1-配置Termux"><a href="#1-配置Termux" class="headerlink" title="1.配置Termux"></a>1.配置Termux</h1><h2 id="更新和安装工具"><a href="#更新和安装工具" class="headerlink" title="更新和安装工具"></a>更新和安装工具</h2><p>首先在开始之前先打开老王VPN或者其他可以翻墙的工具都可以，第一次打开老王VPN需要等一会，然后进入主界面后如图，点击连线即可，第一次开启可能会提示你是否启用VPN标识，直接点确实即可。<br>第一次启动Termux的时候需要从远程服务器加载数据，可能会比较慢，耐心等待一会就行，然后出现如下界面就行，如果出现其他提示就关闭Termux用运营商网络试试。 </p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/294c0dfb13e9769e3321a96679b14360.png#pic_center" alt="图片"></p>
-<p>然后执行以下命令来更新Termux软件库，如果中途停住按回车就行，然后等待一会直到出现 “ $ ” 表示更新完成 </p>
-<pre><code class="shell">$ apt update &amp;&amp; apt upgrade -y 
-</code></pre>
-<p>接下来安装基本工具，等会安装Kali所需的几个工具，执行以下命令等待安装完成即可（出现 “ $ ” 即可） </p>
-<pre><code class="shell">$ apt install curl vim wget -y  
-</code></pre>
-<h2 id="美化及创建内部存贮软目录"><a href="#美化及创建内部存贮软目录" class="headerlink" title="美化及创建内部存贮软目录"></a>美化及创建内部存贮软目录</h2><p>然后安装一个终端美化工具，为什么安装这个呢，它不光是让界面好看，有个功能是可以创建手机存贮软目录，因为termux安装在根目录的，未Root用户是无法访问的，Termux也无法访问手机存贮目录，所以有了软目录就可以通过Termux访问手机存贮目录了，比如手机下载文件夹，废话不多说，执行以下命令即可安装，安装时可能会提示你给予存贮权限，点允许即可。 </p>
-<pre><code class="shell">$ sh -c &quot;$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)&quot;  
-</code></pre>
-<p>如果不小心点了拒绝执行以下命令重新获取就行。 </p>
-<pre><code class="shell">$ termux-setup-storage 
-</code></pre>
-<p>等待它自动安装，完成后会让你输入配色序号，分别是<strong>色彩样式</strong>和<strong>字体样式</strong>，我是如下设置。 </p>
-<pre><code class="shell">... 
-Enter a number, leave blank to not to change: 41 
-... 
-Enter a number, leave blank to not to change: 7 
-</code></pre>
-<h2 id="定制常用按键（可选）"><a href="#定制常用按键（可选）" class="headerlink" title="定制常用按键（可选）"></a>定制常用按键（可选）</h2><p>对于熟悉Linux的朋友可以配置这个，首先新建并编辑一个配置文件： </p>
-<pre><code class="shell">$ vim ~/.termux/termux.properties 
-</code></pre>
-<p>按 “ i ” 进入编辑模式输入以下内容： </p>
-<pre><code class="shell"># 可以自定义按键 
-extra-keys = [ \ 
- [&#39;ESC&#39;,&#39;-&#39;,&#39;/&#39;,&#39;HOME&#39;,&#39;UP&#39;,&#39;END&#39;,&#39;PGUP&#39;,&#39;DEL&#39;], \ 
- [&#39;TAB&#39;,&#39;CTRL&#39;,&#39;ALT&#39;,&#39;LEFT&#39;,&#39;DOWN&#39;,&#39;RIGHT&#39;,&#39;PGDN&#39;,&#39;BKSP&#39;] \ 
-] 
-</code></pre>
-<p>修改后点击ESC，然后直接输入 <strong>“ZZ” （一定要大写）</strong> 即可保存并退出，如果没有 <strong>ESC</strong> 那行扩展键，从屏幕左侧向右滑动会 显示隐藏式导航栏，长按左下角的 <strong>KEYBOARD</strong> 即可显示扩展键，接下来 重启Termux即可生效，如图：<br><img src="https://img-blog.csdnimg.cn/img_convert/e092d468058c8307a9522f9d0b9ea5a6.png#pic_center" alt="2" style="zoom:50%;" /></p>
-<h1 id="2-开始安装Kali-NetHunter"><a href="#2-开始安装Kali-NetHunter" class="headerlink" title="2.开始安装Kali NetHunter"></a>2.开始安装Kali NetHunter</h1><p>下载Kali NetHunter镜像：<br><strong>谷歌网盘：</strong> <a href="https://drive.google.com/uc?id=13BjoGirO0xONNeJ2FO0PcH8HV-3McrbD&amp;export=download">https://drive.google.com/uc?id=13BjoGirO0xONNeJ2FO0PcH8HV-3McrbD&amp;export=download</a><br><strong>百度网盘：</strong> <a href="https://pan.baidu.com/s/1ew2dny6xX5x26f9wSZY6uQ">https://pan.baidu.com/s/1ew2dny6xX5x26f9wSZY6uQ</a>  提取码：wyml </p>
-<p>如果用百度网盘下载需要设置默认下载目录为手机Download文件夹，如图：<br><img src="https://img-blog.csdnimg.cn/img_convert/cdc8f9e3d46cada4929e218e23b69bad.png#pic_center" alt="2" style="zoom:40%;" /><br>下载好后应该在手机Download目录下面，然后执行以下命令从Download目录移动镜像到Termux目录： </p>
-<pre><code class="shell">$ mv storage/downloads/kalifs-arm64-full.tar.xz ~/ 
-</code></pre>
-<p>这里可能会出现下面错误：</p>
-<pre><code class="shell">mv:cannot stat &#39;storage/downloads/kalifs-arm64-full.tar.xz&#39;: No such file or directory
-</code></pre>
-<p>如果出现这个错误，运行以下命令即可：</p>
-<pre><code class="shell">$ mv storage/shared/download/我的资源/Linux/kalifs-arm64-full.tar.xz ~/
-</code></pre>
-<p>**注意：镜像文件有点大，移动过程会有点慢，请耐心等待出现 “ $ ” 即可。 **<br>获取并执行安装脚本： </p>
-<pre><code class="shell">$ wget -O install-nethunter-termux https://pys0126.github.io/dlc/install-nethunter-termux
-$ chmod +x install-nethunter-termux 
-$ ./install-nethunter-termux 
-</code></pre>
-<p>执行后可能会停住提示你:<code>[?] Existing image file found. Delete and download a new one? [y/N]</code>这里输入n回车即可，然后它会解压镜像，这个过程可能10-20分钟，请耐心等待，出现如下界面说明Kali已经安装成功了。<br><img src="https://img-blog.csdnimg.cn/img_convert/5b5514f385a385bf5a5b8dd46acd3b71.png#pic_center" alt="图片"></p>
-<h1 id="3-使用Kali-NetHunter"><a href="#3-使用Kali-NetHunter" class="headerlink" title="3.使用Kali NetHunter"></a>3.使用Kali NetHunter</h1><h2 id="Kali-NetHunter启动前命令"><a href="#Kali-NetHunter启动前命令" class="headerlink" title="Kali NetHunter启动前命令"></a>Kali NetHunter启动前命令</h2><p><strong>注意：在使用Kali之前可以把老王VPN关了，以免影响网速。</strong> </p>
-<p>在Termux执行以下命令之一： </p>
-<pre><code class="shell">命令                  功能      
-$nh                以普通用户启动Kali NetHunter命令行界面 
-$nh kex passwd     配置KeX密码（仅在第一次使用图形界面前使用） 
-$nh kex &amp;          建立Kali NetHunter图形界面普通用户会话 
-$nh kex stop       停止Kali NetHunter图形界面普通用户会话（每次关闭后必须运行） 
-# 一般常用以下命令 
-$nh -r              以普通用户启动Kali NetHunter命令行界面 
-$nh -r kex passwd   配置KeX密码（仅在第一次使用Root用户图形界面前使用） 
-$nh -r kex &amp;        建立Kali NetHunter图形界面Root用户会话 
-$nh -r kex stop        停止Kali NetHunter图形界面Root用户会话（每次关闭后必须运行） 
-$nh -r kex kill     关闭所有KeX会话 
-</code></pre>
-<h2 id="使用图形化界面"><a href="#使用图形化界面" class="headerlink" title="使用图形化界面"></a>使用图形化界面</h2><p>不知道如何使用图像化界面？首先，执行： </p>
-<pre><code class="shell">$nh -r kex passwd 
-password:      #创建Kex密码，这里输入的密码是不显示的 
-Verify:        #再次确认Kex密码，这里也不会显示 
-</code></pre>
-<p>如果出现 “ $ ” 表示创建成功，其他情况都说明两次输入密码不一致。然后使用以下命令开启图形界面会话。 </p>
-<pre><code class="shell">$ nh -r kex &amp; 
-</code></pre>
-<p>出现下图表示开启成功，可以进行下一步操作。<br><img src="https://img-blog.csdnimg.cn/img_convert/8ca0c474d301fcfc24fec34e09f991e1.png#pic_center" alt="2" style="zoom:50%;" /></p>
-<p>接下来打开 <strong>NetHunter KeX</strong> ，然后像下图设置，然后点击右上角 <strong>Connect</strong> 即可进入图形界面。 </p>
-<img src="https://img-blog.csdnimg.cn/img_convert/c59b11e8004d0c835f3a7706096666a0.png#pic_center" alt="2" style="zoom:25%;" />
 
-<h1 id="4-扩展"><a href="#4-扩展" class="headerlink" title="4.扩展"></a>4.扩展</h1><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>在图形界面下鼠标指针的操作为：滑动=移动鼠标；双击=鼠标左键；两指点击=鼠标右键</p>
-<h2 id="安装kali默认工具"><a href="#安装kali默认工具" class="headerlink" title="安装kali默认工具"></a>安装kali默认工具</h2><p>如果需要Kali默认的工具的话需要确保手机剩余16GB空间，然后在**图形界面(如下图)**下打开终端，如图，然后点击右边的键盘标志打开键盘执行如下命令： </p>
-<pre><code class="shell">root@localhost:~# sudo apt update &amp;&amp; sudo apt full-upgrade 
-... #停住就输入y，后面再停住就回车，等待完成 
-root@localhost:~# sudo apt install kali-linux-default 
-... #停住就输入y，后面再停住就回车，等待完成 
-</code></pre>
-<img src="https://img-blog.csdnimg.cn/img_convert/85e90e4a5e6edd8282d57ac3429b43f4.png#pic_center" alt="2" style="zoom:70%;" />
 
-<p><strong>安装到此如果还有什么问题QQ联系：1637566997</strong> </p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-        <category>Kali</category>
-        <category>安卓</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Android</tag>
-        <tag>Kali</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Manjaro[KDE]安装到使用</title>
-    <url>/cl200n1ro000ajbjx545k7fg9-page8/</url>
-    <content><![CDATA[<h3 id="折腾基于Arch的Linux发行版：Manjaro-【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括英特尔-英伟达双显卡的驱动问题。"><a href="#折腾基于Arch的Linux发行版：Manjaro-【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括英特尔-英伟达双显卡的驱动问题。" class="headerlink" title="折腾基于Arch的Linux发行版：Manjaro 【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括英特尔+英伟达双显卡的驱动问题。"></a>折腾基于Arch的Linux发行版：Manjaro 【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括<strong>英特尔+英伟达双显卡</strong>的驱动问题。</h3><span id="more"></span>
 
-<h1 id="1-安装前"><a href="#1-安装前" class="headerlink" title="1.安装前"></a>1.安装前</h1><p><strong>1.进入到grub界面，首先选择语言为Chinese–&gt;zh-CN</strong></p>
-<p><strong>2.选择drives=nofree（带有英伟达显卡的务必选这个）</strong></p>
-<h1 id="2-进行安装"><a href="#2-进行安装" class="headerlink" title="2.进行安装"></a>2.进行安装</h1><p><strong>主要是选择分区，分区步骤：</strong></p>
-<p><strong>1.选择300M，格式为FAT32，挂载点为/boot/efi，标记为boot</strong></p>
-<p><strong>2.选择15G，格式为exT4，挂载点为/opt</strong></p>
-<p><strong>3.选择30G，格式为exT4，挂载点为/</strong></p>
-<p><strong>4.选择剩余空间，格式为exT4，挂载点为/home</strong></p>
-<p><strong>5.点击下一步，点继续安装</strong></p>
-<p><strong>注意：最好空出几个G空间出来，不要问为什么</strong></p>
-<h1 id="3-安装后"><a href="#3-安装后" class="headerlink" title="3.安装后"></a>3.安装后</h1><p><strong>1.更改为国内软件源</strong></p>
-<pre><code class="shell">$ sudo pacman-mirrors -i -c China -m rank
-</code></pre>
-<p><strong>然后选择延迟最低的源，点击确定</strong><br><strong>2.更新软件源</strong></p>
-<pre><code class="shell">$ sudo pacman -Syyu 
-</code></pre>
-<p><strong>3.安装第三方包管理器yay和vim</strong></p>
-<pre><code class="shell">$ sudo pacman -S yay
-$ yay -S vim
-</code></pre>
-<p>yay命令跟pacman命令用一样点参数，而且不用加sudo<br><strong>4.安装googlepinyin中文输入法</strong></p>
-<pre><code class="shell">$ yay -S fcitx-im
-$ yay -S fcitx-configtool
-$ yay -S fcitx-googlepinyin
-</code></pre>
-<p>使用vim编辑～/.xprofile文件，加入一下文本：</p>
-<pre><code class="shell">$ export GTK_IM_MODULE=fcitx
-$ export QT_IM_MODULE=fcitx
-$ export XMODIFIERS=&quot;@im=fcitx&quot;
-</code></pre>
-<p><strong>5.安装解包之内工具：</strong></p>
-<pre><code class="shell">yay -S pkgconf fakeroot patch
-</code></pre>
-<p><strong>6.如果发现系统没有声音，声音设备显示伪输出，执行以下命令（有声音就不用看这条）</strong></p>
-<pre><code class="shell">$ echo “options snd-hda-intel dmic_detect=0” | sudo tee -a /etc/modprobe.d/alsa-base.conf
-$ echo “blacklist snd_soc_skl” | sudo tee -a /etc/modprobe.d/blacklist.conf
-</code></pre>
-<p><strong>7.完成以上操作就reboot</strong></p>
-<h1 id="4-使用中"><a href="#4-使用中" class="headerlink" title="4.使用中"></a>4.使用中</h1><p><strong>1.科学上网</strong></p>
-<p>Qv2ray:</p>
-<p><a href="https://tlanyan.me/download.php?filename=/v2/linux/Qv2ray.v2.6.3.linux-x64.AppImage">免安装程序</a></p>
-<p><a href="https://github.com/v2ray/v2ray-core/releases/download/v4.28.2/v2ray-linux-64.zip">v2ray内核</a></p>
-<p>ssr-gtk:</p>
-<p><a href="https://github.com/Baloneo/ssr-gtk">ssr-gtk</a>(需安装的包：media-control-indicator-git)</p>
-<p><strong>2.解决下载软件时git clone很慢的情况</strong></p>
-<p>配置git帐号信息</p>
-<pre><code class="shell">$ git config --global user.name &quot;你的git名称&quot;
-$ git config --global user.email 你的git邮箱
-</code></pre>
-<p>生成SSH密钥</p>
-<pre><code class="sh">$ ssh-keygen -t rsa -C “你的git邮箱”    #一路回车
-</code></pre>
-<p>复制公钥</p>
-<pre><code class="sh">$ cd .ssh/
-$ cat id_rsa.pub   #将显示出来点公钥全部复制
-</code></pre>
-<p>进入你的github账户设置添加SSH密钥，设置git clone代理（每次开启代理都要设置，SSR端口默认为1080，Qv2ray默认为1089）</p>
-<pre><code class="sh">$ git config --global http.proxy socks5://127.0.0.1:1080
-$ git config --global https.proxy socks5://127.0.0.1:1080
-</code></pre>
-<p>确保打开了SSR或者Qv2ray全局代理模式，然后便可以快速的clone了<br><strong>3.yay安装出现错误解决</strong></p>
-<p>如果出现以下错误</p>
-<pre><code class="sh">fatal: 无法访问 &#39;***&#39;：OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to aur.archlinux.org:443
-</code></pre>
-<p>运行以下命令即可解决</p>
-<pre><code class="sh">$ git config --global --unset http.proxy
-#如果速度慢运行以下命令
-$ git config --global http.proxy socks5://127.0.0.1:1080
-$ git config --global https.proxy socks5://127.0.0.1:1080
-</code></pre>
-<p><strong>4.安装美化下载工具</strong></p>
-<pre><code class="sh">$ yay -S ocs-url
-</code></pre>
-<p><strong>5.解决QQ/Tim闪退，打不了中文</strong></p>
-<p>如果闪退，执行以下命令</p>
-<pre><code class="sh">$ sudo pacman -S gnome-settings-daemon
-$ sudo cp /etc/xdg/autostart/org.gnome.SettingsDaemon.XSettings.desktop   ~/.config/autostart
-</code></pre>
-<p>然后打开系统设置-&gt;开机或关机-&gt;自动启动-&gt;添加脚本-&gt;输入/usr/lib/gsd-xsettings，重启<br>如果发现打不了中文在‘/opt/deepinwine/apps/Deepin-TIM/run.sh’开头加入以下命令，并重启：</p>
-<pre><code class="sh">export GTK_IM_MODULE=fcitxexport QT_IM_MODULE=fcitxexport XMODIFIERS=@im=fcitx
-</code></pre>
-<p>安装TIM</p>
-<pre><code class="sh">$ yay -S deepin-wine-tim
-</code></pre>
-<p><strong>6.安装微信</strong></p>
-<pre><code class="sh">$ yay -S deepin-wine-wechat
-$ yay -S deepin-wine
-</code></pre>
-<p>修改以下两个文件的WINE_CMD的值</p>
-<pre><code class="sh">$ sudo vim /opt/deepinwine/apps/Deepin-WeChat/run.sh
-$ sudo vim /opt/deepinwine/tools/run.sh
-# 改成WINE_CMD=&quot;deepin-wine&quot;
-</code></pre>
-<p><strong>7.解决网易云音乐无法加载问题（貌似能解决）</strong></p>
-<pre><code class="shell">$ yay -S automake autoconf bison flex
-$ yay -S gstreamer0.10-good-plugins
-</code></pre>
-<p><strong>8.英特尔+英伟达双显卡，使用英伟达显卡运行程序</strong><br>用终端在需要用英伟达显卡执行的程序前加入“prime-run”命令：</p>
-<pre><code class="shell">$ prime-run &lt;程序名&gt;
-</code></pre>
-<p>如果要使用英伟达显卡运行steam里面的游戏，则设置该游戏的启动选项为：</p>
-<pre><code class="shell">prime-run %command%
-</code></pre>
-<p><strong>9.出现Failed to connect to raw.githubusercontent.com:443的解决办法</strong><br>开启代理，1080需要换成你自己代理的端口(ssr)</p>
-<pre><code class="shell">$ exportall_proxy=socks5://127.0.0.1:1080
-</code></pre>
-<p>关闭代理</p>
-<pre><code class="shell">$ unset all_proxy
-</code></pre>
-]]></content>
-      <categories>
-        <category>Linux</category>
-        <category>Manjaro</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Manjaro</tag>
-        <tag>双显卡</tag>
-        <tag>KDE桌面</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>填安装最新版本Kali-Linux的坑</title>
-    <url>/cl200n1ry000djbjx12sv2gsq-page3/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>1.安装20年后版本的Kali-Linux让我踩了好多“坑”，这篇文章能填上大部分的“坑”🤨… </p>
-<h1 id="一-Kali安装显示cdrom没挂载解决"><a href="#一-Kali安装显示cdrom没挂载解决" class="headerlink" title="一.Kali安装显示cdrom没挂载解决"></a>一.Kali安装显示cdrom没挂载解决</h1><p>1.查看/目录下是否有cdrom,如果没有mkdir cdrom,或者删除rm -rf cdrom ,重新mkdir cdrom </p>
-<p>2.执行blkid查看U盘的盘符是那个，带有kali live的为kali的镜像</p>
-<p>3.当前安装的环境镜像U盘设备为/dev/sdb1</p>
-<p>4.执行挂载命令：<span id="more"></span></p>
-<p>如果sdb1的type 为vfat,则为<code>mount -t vfat /dev/sdb1 /cdrom</code></p>
-<p>如果sdb1的type 为iso9660,则<code>mount -t iso9660 /dev/sdb1 /cdrom</code></p>
-<p>5.mount 之后可以cd /cdrom，查看文件是否挂载</p>
-<p>6.exit退出</p>
-<p>注：blkid可以看到type类型，并且命令执行报无效参数，表示没写对，而非命令不存在。另外进入shell的快捷键为ALT+F2,或者Crtl+ALT+F2，Crtl+ATL+F5回到安装界面</p>
-<p>或者根据拔插U盘判断设备是哪个</p>
-<h1 id="二-声音设备显示伪输出"><a href="#二-声音设备显示伪输出" class="headerlink" title="二.声音设备显示伪输出"></a>二.声音设备显示伪输出</h1><p>终端输入以下命令：</p>
-<pre><code class="plain">$ echo “options snd-hda-intel dmic_detect=0” | sudo tee -a /etc/modprobe.d/alsa-base.conf
-$ echo “blacklist snd_soc_skl” | sudo tee -a /etc/modprobe.d/blacklist.conf
-</code></pre>
-<h1 id="三-安装Deepin-wine的QQ，微信"><a href="#三-安装Deepin-wine的QQ，微信" class="headerlink" title="三.安装Deepin-wine的QQ，微信"></a>三.安装Deepin-wine的QQ，微信</h1><p>添加32位支持：</p>
-<pre><code class="shell">$ sudo dpkg --add-architecture i386 
-</code></pre>
-<p>添加deepin的软件源：</p>
-<pre><code class="plain">deb http://mirrors.aliyun.com/deepin panda main contrib non-free
-deb-src http://mirrors.aliyun.com/deepin panda main contrib non-free
-</code></pre>
-<p>然后更新软件源，提示签名验证错误，执行：</p>
-<pre><code class="plain">$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 提示的公钥
-</code></pre>
-<p>安装deepin-win:</p>
-<pre><code class="plain">$ apt install deepin-wine --fix-missing
-</code></pre>
-<p>安装中文字体:</p>
-<pre><code class="plain">$ apt-get install xfonts-intl-chinese
-$ apt-get install ttf-wqy-microhei
-</code></pre>
-<p>安装QQ和微信:</p>
-<pre><code class="plain">$ sudo apt install deepin.com.qq.im deepin.com.wechat
-</code></pre>
-<p>注：安装Toplcons Redux以解决最小化消失的问题，如果执行微信过后出现黑块请参考：<br><a href="https://www.cnblogs.com/lanqie/p/11287057.html#2621990085">https://www.cnblogs.com/lanqie/p/11287057.html#2621990085</a></p>
-<p>补充作者添加runrun.sh文件后执行以下命令：</p>
-<pre><code class="shell">$ sudo chmod +x /opt/deepinwine/apps/Deepin-WeChat/runrun.sh
-</code></pre>
-]]></content>
-      <categories>
-        <category>Linux</category>
-        <category>Kali</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Kali</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>去TM的学习通</title>
-    <url>/cl200n1s2000ejbjxct22ao62-Fuck_CX/</url>
-    <content><![CDATA[<p><strong>仅支持CQCIVC学院</strong>，目前的功能：过PPT任务，视频任务（16倍播放需自己设置网课扩展），捕获异常界面要求输入的验证码</p>
-<span id="more"></span>
-
-<p><a href="https://github.com/pys0126/Fuck_CX/archive/main.zip">下载地址</a></p>
-<p><a href="https://github.com/pys0126/Fuck_CX">项目地址</a></p>
-<h1 id="前提需要"><a href="#前提需要" class="headerlink" title="前提需要"></a>前提需要</h1><h2 id="安装Python3和相关依赖"><a href="#安装Python3和相关依赖" class="headerlink" title="安装Python3和相关依赖"></a>安装Python3和相关依赖</h2><ul>
-<li>安装Python3<ul>
-<li>Windows下载地址：<a href="https://www.python.org/downloads/release/python-379/">https://www.python.org/downloads/release/python-379/</a></li>
-</ul>
-</li>
-<li>安装依赖：<ul>
-<li>在命令行窗口运行<code>pip3 install -r requirements.txt</code><h2 id="下载Edge浏览器的webdriver"><a href="#下载Edge浏览器的webdriver" class="headerlink" title="下载Edge浏览器的webdriver"></a>下载Edge浏览器的webdriver</h2></li>
-</ul>
-</li>
-<li>在Edge浏览器输入edge://version/查看版本，然后下载<strong>对应版本的Webdriver</strong></li>
-<li>Webdriver下载地址：<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/</a><h2 id="下载网课扩展"><a href="#下载网课扩展" class="headerlink" title="下载网课扩展"></a>下载网课扩展</h2></li>
-<li>下载地址：<a href="https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip">https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip</a> （如何添加edge扩展自行百度）<h2 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h2></li>
-<li>1、在脚本12行-14行设置好Webdriver路径，手机号，密码</li>
-<li>2、在脚本路径下按住Shift+鼠标右键打开PowerShell，运行<code>python &#39;.\fuck_cx(requests+selenium).py&#39;</code></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>爬虫</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>华为HCIA（Big Data）培训记录</title>
-    <url>/cl27ke84w000030jx2uq5h4yf-2022-4-20/</url>
-    <content><![CDATA[<h1 id="大数据概述-amp-解决办法"><a href="#大数据概述-amp-解决办法" class="headerlink" title="大数据概述&amp;解决办法"></a>大数据概述&amp;解决办法</h1><h2 id="大数据的特征（5v-1c）"><a href="#大数据的特征（5v-1c）" class="headerlink" title="大数据的特征（5v+1c）"></a>大数据的特征（5v+1c）</h2><ul>
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="大数据概述-amp-解决办法"><a href="#大数据概述-amp-解决办法" class="headerlink" title="大数据概述&amp;解决办法"></a>大数据概述&amp;解决办法</h1><h2 id="大数据的特征（5v-1c）"><a href="#大数据的特征（5v-1c）" class="headerlink" title="大数据的特征（5v+1c）"></a>大数据的特征（5v+1c）</h2><ul>
 <li>大量：数据量巨大，MB,GB,TB,PB</li>
 <li>多样：数据类型多样，数据来源多样 数据来源：服务器日志、网站浏览信息、社交<br>结构化数据：表格数据 平台、摄像头信息<br>半结构化数据：网页html、xml<br>非结构化数据：视频、音频、图片、文字</li>
 <li>高速：数据产生速度快、数据处理速度快</li>
@@ -1089,13 +737,552 @@ DQL:数据查询语言
 # 转载连接
 ## ![Chenci&#39;s blog：华为HCIA](https://chencicici.github.io/2022/04/20/%E5%8D%8E%E4%B8%BAHCIA/)
 </code></pre>
-]]></content>
-      <categories>
-        <category>大数据</category>
-      </categories>
-      <tags>
-        <tag>HCIA</tag>
-        <tag>大数据</tag>
-      </tags>
-  </entry>
-</search>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.uodrad.top/cl27ke84w000030jx2uq5h4yf-2022-4-20/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HCIA/" rel="tag">HCIA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" rel="tag">大数据</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/cl200n1qk0001jbjxblv876bl-Fuck-Ivce/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Python网易职教云（MooC）刷课</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "4zd9J8JtWvgAna2eJx8eOdUv-gzGzoHsz",
+    app_key: "n12qRUkYT4zvH8FHSshMR5cS",
+    path: window.location.pathname,
+    avatar: "retro",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2022
+        <i class="ri-heart-fill heart_icon"></i> UodRad
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>    
+    </main>
+    <div class="float_btns">
+      <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+    </div>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="https://cdn.lovepp.xyz/blog/logo.png" alt="UodRad的博客"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯奶茶吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.lovepp.xyz/blog/alipay.jpg!vip">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.lovepp.xyz/blog/wechat.png!vip">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-3.6.0.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true,
+  };
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+ 
+<script src="/js/clickLove.js"></script>
+ 
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+ 
+<script src="/js/dz.js"></script>
+ 
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+    <div id="music">
+    
+    
+    
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="52"
+        src="//music.163.com/outchain/player?type=2&id=1393411383&auto=0&height=32"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>
+    
+    
+
+  </div>
+</body>
+
+</html>

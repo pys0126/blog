@@ -6,7 +6,7 @@
   <link href="https://www.uodrad.top/atom.xml" rel="self"/>
   
   <link href="https://www.uodrad.top/"/>
-  <updated>2022-01-08T09:45:24.000Z</updated>
+  <updated>2022-04-20T06:28:15.000Z</updated>
   <id>https://www.uodrad.top/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>华为HCIA（Big Data）培训记录</title>
+    <link href="https://www.uodrad.top/cl27ke84w000030jx2uq5h4yf-2022-4-20/"/>
+    <id>https://www.uodrad.top/cl27ke84w000030jx2uq5h4yf-2022-4-20/</id>
+    <published>2022-04-20T06:28:15.000Z</published>
+    <updated>2022-04-20T06:28:15.000Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;大数据概述-amp-解决办法&quot;&gt;&lt;a href=&quot;#大数据概述-amp-解决办法&quot; class=&quot;headerlink&quot; title=&quot;大数据概述&amp;amp;解决办法&quot;&gt;&lt;/a&gt;大数据概述&amp;amp;解决办法&lt;/h1&gt;&lt;h2 id=&quot;大数据的特征（5v-1c）&quot;&gt;&lt;a href=&quot;#大数据的特征（5v-1c）&quot; class=&quot;headerlink&quot; title=&quot;大数据的特征（5v+1c）&quot;&gt;&lt;/a&gt;大数据的特征（5v+1c）&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;大量：数据量巨大，MB,GB,TB,PB&lt;/li&gt;
+&lt;li&gt;多样：数据类型多样，数据来源多样 数据来源：服务器日志、网站浏览信息、社交&lt;br&gt;结构化数据：表格数据 平台、摄像头信息&lt;br&gt;半结构化数据：网页html、xml&lt;br&gt;非结构化数据：视频、音频、图片、文字&lt;/li&gt;
+&lt;li&gt;高速：数据产生速度快、数据处理速度快&lt;/li&gt;
+&lt;li&gt;价值：价值密度低&lt;/li&gt;
+&lt;li&gt;准确：数据真实性&lt;/li&gt;
+&lt;li&gt;复杂：数据产生速度快、数据的类型多样等特征，导致做数据处理时处理过程变得很复杂&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="大数据" scheme="https://www.uodrad.top/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+    
+    <category term="HCIA" scheme="https://www.uodrad.top/tags/HCIA/"/>
+    
+    <category term="大数据" scheme="https://www.uodrad.top/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>Python网易职教云（MooC）刷课</title>
