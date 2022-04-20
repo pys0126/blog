@@ -173,7 +173,7 @@
 <li>寻址时间增长</li>
 </ol>
 <p>不适合随机读写，可以做追加写</p>
-<h2 id="HDFS系统架构"><a href="#HDFS系统架构" class="headerlink" title="HDFS系统架构"></a>HDFS系统架构</h2><p><img src="img.png" alt="HDFS系统架构"></p>
+<h2 id="HDFS系统架构"><a href="#HDFS系统架构" class="headerlink" title="HDFS系统架构"></a>HDFS系统架构</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img.png" alt="HDFS系统架构"></p>
 <ul>
 <li>Client (客户端) :用户接口，用户通过Client连接到组件</li>
 <li>NameNode (名称节点，主节点) :管理DataNode,并且接收用户请求,分发任务，存储元数据信息</li>
@@ -184,7 +184,7 @@
 <li>单名称节点故障:整个集群都无法使用—&gt;HA(主备配置)</li>
 <li>单名称节点性能瓶颈问题:并发处理的任务量有限—-&gt;联邦机制</li>
 </ul>
-<h2 id="HDFS-HA特性-主备配置"><a href="#HDFS-HA特性-主备配置" class="headerlink" title="HDFS HA特性(主备配置)"></a>HDFS HA特性(主备配置)</h2><p><img src="img_1.png" alt="HA特性"></p>
+<h2 id="HDFS-HA特性-主备配置"><a href="#HDFS-HA特性-主备配置" class="headerlink" title="HDFS HA特性(主备配置)"></a>HDFS HA特性(主备配置)</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_1.png" alt="HA特性"></p>
 <ul>
 <li>active节点:对外提供服务</li>
 <li>standby节点:不断备份active节点的数据，<code>当active宕机,standby会成为新的active</code></li>
@@ -192,8 +192,8 @@
 </ul>
 <h2 id="HDFS的联邦机制"><a href="#HDFS的联邦机制" class="headerlink" title="HDFS的联邦机制"></a>HDFS的联邦机制</h2><pre><code>各个NN之间是相互隔离的，维护自己的命名空间
 </code></pre>
-<p><img src="img_2.png" alt="联邦机制"></p>
-<h2 id="HDFS元数据持久化-主备同步"><a href="#HDFS元数据持久化-主备同步" class="headerlink" title="HDFS元数据持久化(主备同步)"></a>HDFS元数据持久化(主备同步)</h2><p><img src="img_3.png" alt="元数据持久化"></p>
+<p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_2.png" alt="联邦机制"></p>
+<h2 id="HDFS元数据持久化-主备同步"><a href="#HDFS元数据持久化-主备同步" class="headerlink" title="HDFS元数据持久化(主备同步)"></a>HDFS元数据持久化(主备同步)</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_3.png" alt="元数据持久化"></p>
 <ol>
 <li>备节点会通知主节点新建一个Editlog.new文件， 从这之后的操作都记录在.new文件中</li>
 <li>备节点从主节点拷贝Editlog、Fsimage文件(只有第一 次需要 下载Fsimage,后续同步使用本地的)</li>
@@ -218,7 +218,7 @@
 <li>同一机架不同节点的距离为2</li>
 <li>不同机架的节点距离为4</li>
 </ol>
-<h2 id="HDFS读取流程"><a href="#HDFS读取流程" class="headerlink" title="HDFS读取流程"></a>HDFS读取流程</h2><p><img src="img_4.png" alt="读取流程"></p>
+<h2 id="HDFS读取流程"><a href="#HDFS读取流程" class="headerlink" title="HDFS读取流程"></a>HDFS读取流程</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_4.png" alt="读取流程"></p>
 <ol>
 <li>Client向NameNode发起读取请求</li>
 <li>NameNode接收到请求，反馈对应的元数据信息给Client</li>
@@ -226,7 +226,7 @@
 <li>DataNode接收到请求，反馈数据内容给Client</li>
 <li>关闭读取流</li>
 </ol>
-<h2 id="HDFS写入流程"><a href="#HDFS写入流程" class="headerlink" title="HDFS写入流程"></a>HDFS写入流程</h2><p><img src="img_5.png" alt="写入流程"></p>
+<h2 id="HDFS写入流程"><a href="#HDFS写入流程" class="headerlink" title="HDFS写入流程"></a>HDFS写入流程</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_5.png" alt="写入流程"></p>
 <ol>
 <li>Client向NameNode发出写入请求</li>
 <li>NameNode接收到请求后生成该文件的元数据信息，反馈DataNode信息给Client</li>
@@ -258,12 +258,12 @@
 <li>如:集群只要1个节点，容灾能力为0<br>  集群只要2个节点，容灾能力为0<br>  集群只要3个节点，容灾能力为1<br>  集群只要4个节点，容灾能力为1</li>
 <li>搭建集群时，尽量选择奇数台节点进行搭建</li>
 </ul>
-<h2 id="ZooKeeper的读特性"><a href="#ZooKeeper的读特性" class="headerlink" title="ZooKeeper的读特性"></a>ZooKeeper的读特性</h2><p><img src="img_6.png" alt="读特性"></p>
+<h2 id="ZooKeeper的读特性"><a href="#ZooKeeper的读特性" class="headerlink" title="ZooKeeper的读特性"></a>ZooKeeper的读特性</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_6.png" alt="读特性"></p>
 <ol>
 <li>Client发起读取请求</li>
 <li>获取到数据(不管接收请求的是Leader节点还是Follower节点)</li>
 </ol>
-<h2 id="ZooKeeper的写特性"><a href="#ZooKeeper的写特性" class="headerlink" title="ZooKeeper的写特性"></a>ZooKeeper的写特性</h2><p><img src="img_7.png" alt="写特性"></p>
+<h2 id="ZooKeeper的写特性"><a href="#ZooKeeper的写特性" class="headerlink" title="ZooKeeper的写特性"></a>ZooKeeper的写特性</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_7.png" alt="写特性"></p>
 <ol>
 <li>Client发起写入请求 如果请求到的节点不是leader节点，follower会把请求转发给leader</li>
 <li>leader接收到请求后会向所有节点发出询问是否可以接收写入</li>
@@ -285,14 +285,14 @@
 <li>map阶段:针对每个数据执行一个操作, 提取数据特征</li>
 <li>reduce阶段:获取到多个map的输出，统一计 算处理,针对key统计汇总这个key对应的value</li>
 </ul>
-<h2 id="Map阶段详情"><a href="#Map阶段详情" class="headerlink" title="Map阶段详情"></a>Map阶段详情</h2><p><img src="img_8.png" alt="Map阶段详情"></p>
+<h2 id="Map阶段详情"><a href="#Map阶段详情" class="headerlink" title="Map阶段详情"></a>Map阶段详情</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_8.png" alt="Map阶段详情"></p>
 <ol>
 <li>数据从数据源获取后进行分片切分、执行map操作</li>
 <li>分片会被存储在环形内存缓冲区( 当缓冲区达到80%会发生溢写)</li>
 <li>把分片溢写到磁盘中，生成MOF文件</li>
 <li>溢写过程中对数据执行</li>
 </ol>
-<h2 id="Map阶段详情-1"><a href="#Map阶段详情-1" class="headerlink" title="Map阶段详情"></a>Map阶段详情</h2><p><img src="img_9.png" alt="Reduce阶段详情"></p>
+<h2 id="Map阶段详情-1"><a href="#Map阶段详情-1" class="headerlink" title="Map阶段详情"></a>Map阶段详情</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_9.png" alt="Reduce阶段详情"></p>
 <ol>
 <li>把数据(MOF)从磁盘中加载到内存中</li>
 <li>当数据量过大会执行归并，如果不多，直接跳过归并执行归约操作</li>
@@ -300,7 +300,7 @@
 </ol>
 <h2 id="词频统计案例-单词计数WordCount"><a href="#词频统计案例-单词计数WordCount" class="headerlink" title="词频统计案例(单词计数WordCount)"></a>词频统计案例(单词计数WordCount)</h2><ol>
 <li>数据源(很多英文句子或短语的一个文件)</li>
-<li>提取出每个单词,统计单词出现的次数<br><img src="img_10.png" alt="词频统计案例"></li>
+<li>提取出每个单词,统计单词出现的次数<br><img src="https://cdn.lovepp.xyz/blog/HCIA/img_10.png" alt="词频统计案例"></li>
 </ol>
 <h2 id="MapReduce缺点"><a href="#MapReduce缺点" class="headerlink" title="MapReduce缺点"></a>MapReduce缺点</h2><ul>
 <li>处理延迟性高</li>
@@ -317,7 +317,7 @@
 <h2 id="Yarn的系统架构"><a href="#Yarn的系统架构" class="headerlink" title="Yarn的系统架构"></a>Yarn的系统架构</h2><pre><code>在集群层面来说只有一个ResourceManager, 多个NodeManager
 以程序执行层面来说，一个应用只有一-个AppMaster,多个Container
 </code></pre>
-<p><img src="img_11.png" alt="Yarn的系统架构"></p>
+<p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_11.png" alt="Yarn的系统架构"></p>
 <ul>
 <li>Client:客户端</li>
 <li>ResourceManager (主节点) :负责资源管理,任务调度</li>
@@ -325,7 +325,7 @@
 <li>ApplicationMaster:特殊的Container, 管理同一应用的其他Container,以及实时关注任务执行状态,反馈给RM</li>
 <li>Container:<code>资源的抽象</code>，被封装起来的资源，一个Container执行一个任务, 其他任务不能使用这个Container的资源</li>
 </ul>
-<h2 id="MapReduce-On-Yarn任务处理流程"><a href="#MapReduce-On-Yarn任务处理流程" class="headerlink" title="MapReduce On Yarn任务处理流程"></a><code>MapReduce On Yarn任务处理流程</code></h2><p><img src="img_12.png" alt="MapReduce On Yarn任务处理流程"></p>
+<h2 id="MapReduce-On-Yarn任务处理流程"><a href="#MapReduce-On-Yarn任务处理流程" class="headerlink" title="MapReduce On Yarn任务处理流程"></a><code>MapReduce On Yarn任务处理流程</code></h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_12.png" alt="MapReduce On Yarn任务处理流程"></p>
 <ol>
 <li>Client向RM发起请求</li>
 <li>RM(ApplicationManager)接收到请求后在NM中启动一-个AppMaster</li>
@@ -337,7 +337,7 @@
 <li>RM将任务情况反馈给Client</li>
 </ol>
 <p>Yarn搭建时支持主备配置，实现主备ResourceManager<br>AppMaster的容错(当-个AppMaster出现故障,任务管理会被迁移到新的AppMaster)</p>
-<p><img src="img_13.png" alt="AppMaster的容错"></p>
+<p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_13.png" alt="AppMaster的容错"></p>
 <h1 id="HBase"><a href="#HBase" class="headerlink" title="HBase"></a>HBase</h1><pre><code>HBase分布式列式NoSQL数据库，底层存储使用的是HDFS ,`没有数据类型，所有数据存储都是字节数组的形式byte[]`
 创建者:道格卡廷
 出发点:搜索引擎--&gt;提高数据读写速度--&gt; BigTable
@@ -367,11 +367,11 @@
 <li>列族:由一个或多个列组成(创建表时创建的，不能动态更改)</li>
 <li>单元格:由行和列能确定-一个单元格，<code>一个单元格中可能存在多条记录(多版本记录，使用时间戳进行区分)</code></li>
 </ul>
-<h2 id="HBase的表结构"><a href="#HBase的表结构" class="headerlink" title="HBase的表结构"></a>HBase的表结构</h2><p><img src="img_14.png" alt="HBase的表结构"></p>
+<h2 id="HBase的表结构"><a href="#HBase的表结构" class="headerlink" title="HBase的表结构"></a>HBase的表结构</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_14.png" alt="HBase的表结构"></p>
 <pre><code>要找到行列对应的单元格值时，表行键,列族:列
 默认情况下，只返回单元格中的最新记录，如果要返回多版本需要指定参数VERSIONS=&gt;3
 </code></pre>
-<h2 id="HBase系统架构"><a href="#HBase系统架构" class="headerlink" title="HBase系统架构"></a>HBase系统架构</h2><p><img src="img_15.png" alt="HBase系统架构"></p>
+<h2 id="HBase系统架构"><a href="#HBase系统架构" class="headerlink" title="HBase系统架构"></a>HBase系统架构</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_15.png" alt="HBase系统架构"></p>
 <ul>
 <li>Client:用户可以通过Client连接到HBase,基本不与HMaster交互</li>
 <li>ZooKeeper:监测HMaster的主备运行状态及主备切换，监测HRegionServer的状态，反馈给HMaster,<code>存储HBase元数据信息hbase:meta</code></li>
@@ -415,7 +415,7 @@
 <h2 id="StoreFile的合并"><a href="#StoreFile的合并" class="headerlink" title="StoreFile的合并"></a>StoreFile的合并</h2><pre><code>(刷写操作会出现大量的StoreFile,且部分StoreFile文件大小过小) 合并比较消耗资源,达到一定阈值才会执行
 将多个的StoreFile小文件合并成一个大文件,如果StoreFile文件过大，再进行拆分(根据HDFS块进行拆分)
 </code></pre>
-<p><img src="img_16.png" alt="StoreFile的合并"></p>
+<p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_16.png" alt="StoreFile的合并"></p>
 <p>合并文件会进行筛选:如果本身的StoreFile就已经达到1 00M左右,这个StoreFile是不参与合并的</p>
 <h2 id="HBase读取流程"><a href="#HBase读取流程" class="headerlink" title="HBase读取流程"></a>HBase读取流程</h2><ol>
 <li>Client请求zookeeper获取hbase:meta表元数据信息，获取RegionServer信息</li>
@@ -432,8 +432,8 @@
 </ol>
 <h2 id="BloomFilter-布隆过滤器"><a href="#BloomFilter-布隆过滤器" class="headerlink" title="BloomFilter (布隆过滤器)"></a>BloomFilter (布隆过滤器)</h2><pre><code>判断数据是否存在，如果反馈结果为不存在，是可信的，如果反馈结果为存在，可能有误差
 </code></pre>
-<p>缩小数据违取范围<br><img src="img_17.png" alt="布隆过滤器"></p>
-<p>在HBase中行键是以字典序进行排序<br><img src="img_18.png" alt="以字典序进行排序"></p>
+<p>缩小数据违取范围<br><img src="https://cdn.lovepp.xyz/blog/HCIA/img_17.png" alt="布隆过滤器"></p>
+<p>在HBase中行键是以字典序进行排序<br><img src="https://cdn.lovepp.xyz/blog/HCIA/img_18.png" alt="以字典序进行排序"></p>
 <h2 id="HBase-Shell命令"><a href="#HBase-Shell命令" class="headerlink" title="HBase Shell命令"></a>HBase Shell命令</h2><pre><code class="sql">namespace:
     create_namespace &#39;名称&#39;
     list_namespace
@@ -477,7 +477,7 @@ snapshot:快照操作--&gt; 针对表创建快照，记录当前指定表的数�
 <li>Hive底层使用的是MapReduce做计算，MapReduce的使用对编程人员要求比较高</li>
 <li>可以执行SQL类的查询分析计算</li>
 </ul>
-<h2 id="Hive数据模型"><a href="#Hive数据模型" class="headerlink" title="Hive数据模型"></a>Hive数据模型</h2><p><img src="img_19.png" alt="Hive数据模型"></p>
+<h2 id="Hive数据模型"><a href="#Hive数据模型" class="headerlink" title="Hive数据模型"></a>Hive数据模型</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_19.png" alt="Hive数据模型"></p>
 <ul>
 <li>分区:根据字段值进行划分(指定分区字段,分区字段值相同的记录就存放在一一个分区中)<br>分区在物理上是一个文件夹<br>分区下还可以再有分区和桶<br>在创建表的时候可以指定分区字段<br>分区数量是不固定的</li>
 <li>桶:根据值的哈希值进行求余放到对应的桶中<br>桶在物理.上是一-个文件<br>在创建表的时候可以指定有几个桶</li>
@@ -566,8 +566,8 @@ DQL:数据查询语言
 <li>DataFrame:属于一个DataSet实例， 不可变的弹性分布式数据集，存储数据时不止存储数据内容,存储数据对应结构信息及类型</li>
 <li>DataSet:以对象的形式存储数据集，DataFrame= DataSet[Row]</li>
 </ul>
-<h2 id="RDD、DataFrame、-DataSet数据集的联系"><a href="#RDD、DataFrame、-DataSet数据集的联系" class="headerlink" title="RDD、DataFrame、 DataSet数据集的联系"></a>RDD、DataFrame、 DataSet数据集的联系</h2><p><img src="img_20.png" alt="数据集的联系"></p>
-<h2 id="Spark体系架构"><a href="#Spark体系架构" class="headerlink" title="Spark体系架构"></a>Spark体系架构</h2><p><img src="img_21.png" alt="Spark体系架构"></p>
+<h2 id="RDD、DataFrame、-DataSet数据集的联系"><a href="#RDD、DataFrame、-DataSet数据集的联系" class="headerlink" title="RDD、DataFrame、 DataSet数据集的联系"></a>RDD、DataFrame、 DataSet数据集的联系</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_20.png" alt="数据集的联系"></p>
+<h2 id="Spark体系架构"><a href="#Spark体系架构" class="headerlink" title="Spark体系架构"></a>Spark体系架构</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_21.png" alt="Spark体系架构"></p>
 <ul>
 <li>集群部署形式: <br>Standalone: spark自 己管理资源调度<br>Spark On Yarn:使用yarn做资源管理调度 <br>Mesos: AMR实验室开发的资源管理器，最适用于Spark的资源管理器</li>
 <li>Spark Core:处理核心</li>
@@ -585,7 +585,7 @@ DQL:数据查询语言
 <li>连续查询(程序运行后就不终止,除非系统故障导致的终止或者手动停止)</li>
 <li>事件驱动:传入的数据信息触动任务处理</li>
 </ul>
-<h2 id="Streaming系统架构"><a href="#Streaming系统架构" class="headerlink" title="Streaming系统架构"></a>Streaming系统架构</h2><p><img src="img_22.png" alt="Streaming系统架构"></p>
+<h2 id="Streaming系统架构"><a href="#Streaming系统架构" class="headerlink" title="Streaming系统架构"></a>Streaming系统架构</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_22.png" alt="Streaming系统架构"></p>
 <ul>
 <li>Client:客户端接口</li>
 <li>Nimbus (主节点) :接收客户端的请求，管理Supervisor从节点，管理任务分配，编写任务书</li>
@@ -622,7 +622,7 @@ DQL:数据查询语言
 <li>最少一次:数据可能会发送多次，可靠性高，吞吐量较小<br>  优点:数据不会丢失<br>  缺点:数据可能会被重复执行</li>
 <li>仅有一次(精准一次) :数据就发送一-次, 并且保证发送成功，可靠性高，吞吐量最低<br>  优点:数据不会丢失，且数据不被重复处理<br>  缺点:消耗的资源和时间较多</li>
 </ul>
-<h2 id="Ack机制-消息传输最少一次"><a href="#Ack机制-消息传输最少一次" class="headerlink" title="Ack机制(消息传输最少一次)"></a>Ack机制(消息传输最少一次)</h2><p><img src="img_23.png" alt="Ack机制"></p>
+<h2 id="Ack机制-消息传输最少一次"><a href="#Ack机制-消息传输最少一次" class="headerlink" title="Ack机制(消息传输最少一次)"></a>Ack机制(消息传输最少一次)</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_23.png" alt="Ack机制"></p>
 <h1 id="Fink"><a href="#Fink" class="headerlink" title="Fink"></a>Fink</h1><pre><code>分布式实时计算引擎(流处理引擎)
 </code></pre>
 <h2 id="Flink-VS-Spark-Streaming"><a href="#Flink-VS-Spark-Streaming" class="headerlink" title="Flink VS Spark Streaming"></a>Flink VS Spark Streaming</h2><ul>
@@ -633,7 +633,7 @@ DQL:数据查询语言
 </ul>
 <h2 id="Flink的关键特性"><a href="#Flink的关键特性" class="headerlink" title="Flink的关键特性"></a>Flink的关键特性</h2><pre><code>状态、时间、窗口、检查点
 </code></pre>
-<h2 id="Flink系统架构"><a href="#Flink系统架构" class="headerlink" title="Flink系统架构"></a>Flink系统架构</h2><p><img src="img_24.png" alt="Flink系统架构"></p>
+<h2 id="Flink系统架构"><a href="#Flink系统架构" class="headerlink" title="Flink系统架构"></a>Flink系统架构</h2><p><img src="https://cdn.lovepp.xyz/blog/HCIA/img_24.png" alt="Flink系统架构"></p>
 <ul>
 <li>部署形式: Local (单机版部署)<br>  Cluster (Standalone: Flink集群自己管理资源调度<br>  Yarn:借助Yarn组件帮助管理协调资源和任务)<br>  Clound (云部署)</li>
 <li>Flink核心模块: Runtime (不管是流处理还是批处理都是在Runtime中执行)</li>
@@ -657,7 +657,7 @@ DQL:数据查询语言
 
 ## Flink运行流程
 
-![Flink运行流程](img_25.png)
+![Flink运行流程](https://cdn.lovepp.xyz/blog/HCIA/img_25.png)
 
 1. DataSource:接收数据输入，从数据源获取数据
 2. Transformations:数据转换，数据处理过程
@@ -671,7 +671,7 @@ DQL:数据查询语言
 `5. 最后执行程序(行动算子) executor()`
 
 ## Flink运行程序
-![Flink运行程序](img_26.png)
+![Flink运行程序](https://cdn.lovepp.xyz/blog/HCIA/img_26.png)
 
 1. Client向JobManager发起请求
 2. Client对任务进行优化等操作
