@@ -15,7 +15,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>填安装最新版本Kali-Linux的坑 |  UodRad的博客</title>
+      <title>使用Python在520给女友微信定时批量发送99条情话 |  UodRad的博客</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="https://cdn.lovepp.xyz/blog/avatar.png" />
@@ -59,7 +59,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-page3"
+  id="post-page1"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -70,7 +70,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  填安装最新版本Kali-Linux的坑
+  使用Python在520给女友微信定时批量发送99条情话
 </h1>
  
 
@@ -78,11 +78,11 @@
     </header>
      
     <div class="article-meta">
-      <a href="/cl200n1ry000djbjx12sv2gsq-page3/" class="article-date">
-  <time datetime="2021-12-17T06:54:25.000Z" itemprop="datePublished">2021-12-17</time>
+      <a href="/cl27mwrhw0003u4jx7y748zzw-page1/" class="article-date">
+  <time datetime="2021-12-17T06:22:35.000Z" itemprop="datePublished">2021-12-17</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Linux/">Linux</a> / <a class="article-category-link" href="/categories/Linux/Kali/">Kali</a>
+    <a class="article-category-link" href="/categories/Python/">Python</a> / <a class="article-category-link" href="/categories/Python/%E7%88%AC%E8%99%AB/">爬虫</a>
   </div>
   
 <div class="word_count">
@@ -90,7 +90,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">469</span>
+            <span class="post-count">930</span>
         </span>
     </span>
 
@@ -99,7 +99,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">2 分钟</span>
+            <span class="post-count">3 分钟</span>
         </span>
     </span>
 </div>
@@ -114,45 +114,77 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>1.安装20年后版本的Kali-Linux让我踩了好多“坑”，这篇文章能填上大部分的“坑”🤨… </p>
-<h1 id="一-Kali安装显示cdrom没挂载解决"><a href="#一-Kali安装显示cdrom没挂载解决" class="headerlink" title="一.Kali安装显示cdrom没挂载解决"></a>一.Kali安装显示cdrom没挂载解决</h1><p>1.查看/目录下是否有cdrom,如果没有mkdir cdrom,或者删除rm -rf cdrom ,重新mkdir cdrom </p>
-<p>2.执行blkid查看U盘的盘符是那个，带有kali live的为kali的镜像</p>
-<p>3.当前安装的环境镜像U盘设备为/dev/sdb1</p>
-<p>4.执行挂载命令：<span id="more"></span></p>
-<p>如果sdb1的type 为vfat,则为<code>mount -t vfat /dev/sdb1 /cdrom</code></p>
-<p>如果sdb1的type 为iso9660,则<code>mount -t iso9660 /dev/sdb1 /cdrom</code></p>
-<p>5.mount 之后可以cd /cdrom，查看文件是否挂载</p>
-<p>6.exit退出</p>
-<p>注：blkid可以看到type类型，并且命令执行报无效参数，表示没写对，而非命令不存在。另外进入shell的快捷键为ALT+F2,或者Crtl+ALT+F2，Crtl+ATL+F5回到安装界面</p>
-<p>或者根据拔插U盘判断设备是哪个</p>
-<h1 id="二-声音设备显示伪输出"><a href="#二-声音设备显示伪输出" class="headerlink" title="二.声音设备显示伪输出"></a>二.声音设备显示伪输出</h1><p>终端输入以下命令：</p>
-<pre><code class="plain">$ echo “options snd-hda-intel dmic_detect=0” | sudo tee -a /etc/modprobe.d/alsa-base.conf
-$ echo “blacklist snd_soc_skl” | sudo tee -a /etc/modprobe.d/blacklist.conf
+  <h1 id="阿巴阿巴阿巴"><a href="#阿巴阿巴阿巴" class="headerlink" title="阿巴阿巴阿巴"></a>阿巴阿巴阿巴</h1><p>520到了（迟到的详解），如何大批量给女友发情话呢？首先得有情话吧，情话哪里来呢？我找到了一个情话api，请求地址：“<a target="_blank" rel="noopener" href="https://chp.shadiao.app/api.php%E2%80%9D">https://chp.shadiao.app/api.php”</a> ，那么如何获取情话通过微信发送给女友呢？请看一下详细步骤</p>
+<span id="more"></span>
+
+<h1 id="请求情话API"><a href="#请求情话API" class="headerlink" title="请求情话API"></a>请求情话API</h1><p>首先得导入<strong>Requests</strong>库，如果没有在cmd安装：<code>pip3 install requests</code>， 然后先创建一个空列表content用于存储情话，创建一个Sessions用于持续访问（在这里其实没用），再将网址赋值给url变量，因为该api使用GET请求，所以使用get方法请求这个api地址，然后用列表的addend方法保存进content，最后自定义一个函数封装，这里我自定义一个parse函数</p>
+<pre><code class="python">import requests
+
+content = []
+
+def parse():
+    Sessions = requests.session()
+    url = &quot;https://chp.shadiao.app/api.php&quot;
+    re = Sessions.get(url=url)
+    content.append(re.text)
 </code></pre>
-<h1 id="三-安装Deepin-wine的QQ，微信"><a href="#三-安装Deepin-wine的QQ，微信" class="headerlink" title="三.安装Deepin-wine的QQ，微信"></a>三.安装Deepin-wine的QQ，微信</h1><p>添加32位支持：</p>
-<pre><code class="shell">$ sudo dpkg --add-architecture i386 
+<h1 id="发送微信消息"><a href="#发送微信消息" class="headerlink" title="发送微信消息"></a>发送微信消息</h1><p>导入itchat库提供的微信接口来查找好友并发送消息（该库需要通过pip安装），然后用auto_login方法登录微信，然后添加hotReload参数并赋值为True用于存储登录信息，然后用search_friends方法查找你女友的备注名称并赋值给user，然后用send方法来发送消息，该方法第一个参数是需要发送的信息也就是content列表中的情话，再填入一个toUserName参数为需要发送给谁也就是user的信息，但是user的信息的是一个列表套字典有很多参数，我们只需要第一个字典中的UserName的值：<code>user[0][&quot;UserName&quot;]</code>，最后自定义一个函数封装，这里我自定义一个sen_msg函数，但是需要设置一个获取列表下标的参数，我这里设置为size，因为后面需要循环发送99条，不可能发个情话列表过去吧，所以发送的消息应为：<code>content[size]</code></p>
+<pre><code class="python">import itchat
+
+def sen_msg(size):
+    itchat.auto_login(hotReload=True)
+    user = itchat.search_friends(&quot;这里为你女友的备注&quot;)
+    itchat.send(content[size], toUserName=user[0][&quot;UserName&quot;])
 </code></pre>
-<p>添加deepin的软件源：</p>
-<pre><code class="plain">deb http://mirrors.aliyun.com/deepin panda main contrib non-free
-deb-src http://mirrors.aliyun.com/deepin panda main contrib non-free
+<h1 id="启动函数"><a href="#启动函数" class="headerlink" title="启动函数"></a>启动函数</h1><p>用for循环请求99次api，将99条情话存入content，并通过微信发送给女友，最后自定义一个函数封装，这里我自定义一个sen_msg函数</p>
+<pre><code class="python">def run():
+    for i in range(99):
+        parse()
+        sen_msg(size=i)
 </code></pre>
-<p>然后更新软件源，提示签名验证错误，执行：</p>
-<pre><code class="plain">$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 提示的公钥
+<h1 id="定时发送"><a href="#定时发送" class="headerlink" title="定时发送"></a>定时发送</h1><p>这里导入一个schedule第三方库（该库需要通过pip安装），该库是个调度器，我们用它来创建一个定时任务，用<code>every().thursday.at(&quot;13:14&quot;).do(run)</code>方法在星期五的13点14分运行run函数，然后用run_pending方法运行在while循环中并每秒检查一次时间，所以需要导入time，用sleep方法等待一秒</p>
+<pre><code class="python">import schedule
+import time
+
+schedule.every().thursday.at(&quot;13:14&quot;).do(run)  # 星期四的13:14发一次
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 </code></pre>
-<p>安装deepin-win:</p>
-<pre><code class="plain">$ apt install deepin-wine --fix-missing
+<h1 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h1><p>因为运行sen_msg函数时会登录微信一次，但是在定时的那个时间不一定在电脑前，所以我们将<code>itchat.auto_login(hotReload=True)</code>写在开头，也就是运行该脚本的时候就登录一次，<code>hotReload=True</code>会保存我的登录信息</p>
+<pre><code class="python">import requests
+import schedule
+import itchat
+import time
+
+content = []
+Sessions = requests.session()
+itchat.auto_login(hotReload=True)  # hotReload=True用于存储登录信息
+
+# 请求情话api
+def parse():
+    url = &quot;https://chp.shadiao.app/api.php&quot;
+    re = Sessions.get(url=url)
+    content.append(re.text)
+
+# 发送微信消息
+def sen_msg(size):
+    print(content[size])
+    user = itchat.search_friends(&quot;你女友的备注&quot;)
+    itchat.send(content[size], toUserName=user[0][&quot;UserName&quot;])
+
+# 启动
+def run():
+    for i in range(99):
+        parse()
+        sen_msg(size=i)
+
+schedule.every().thursday.at(&quot;13:14&quot;).do(run)  # 星期四的13:14发一次
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 </code></pre>
-<p>安装中文字体:</p>
-<pre><code class="plain">$ apt-get install xfonts-intl-chinese
-$ apt-get install ttf-wqy-microhei
-</code></pre>
-<p>安装QQ和微信:</p>
-<pre><code class="plain">$ sudo apt install deepin.com.qq.im deepin.com.wechat
-</code></pre>
-<p>注：安装Toplcons Redux以解决最小化消失的问题，如果执行微信过后出现黑块请参考：<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/lanqie/p/11287057.html#2621990085">https://www.cnblogs.com/lanqie/p/11287057.html#2621990085</a></p>
-<p>补充作者添加runrun.sh文件后执行以下命令：</p>
-<pre><code class="shell">$ sudo chmod +x /opt/deepinwine/apps/Deepin-WeChat/runrun.sh
-</code></pre>
+<p><strong>最终效果</strong>，<a target="_blank" rel="noopener" href="https://github.com/pys0126/Python/blob/master/love.py">GitHub地址</a><br><img src="https://img-blog.csdnimg.cn/20210522184007984.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTQxNDQzMw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
  
       <!-- reward -->
       
@@ -223,12 +255,12 @@ $ apt-get install ttf-wqy-microhei
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.uodrad.top/cl200n1ry000djbjx12sv2gsq-page3/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.uodrad.top/cl27mwrhw0003u4jx7y748zzw-page1/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Kali/" rel="tag">Kali</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%88%AC%E8%99%AB/" rel="tag">爬虫</a></li></ul>
 
     </footer>
   </div>
@@ -236,19 +268,19 @@ $ apt-get install ttf-wqy-microhei
    
   <nav class="article-nav">
     
-      <a href="/cl200n1qk0001jbjxblv876bl-Fuck-Ivce/" class="article-nav-link">
+      <a href="/cl27mwric0007u4jx8vsjhwzk-page2/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            Python网易职教云（MooC）刷课
+            Ubuntu下MySQL“root”用户远程登录配置
           
         </div>
       </a>
     
     
-      <a href="/cl200n1rd0007jbjx6e4ha2mh-page2/" class="article-nav-link">
+      <a href="/cl27mwrj1000eu4jx5hp18ekw-Fuck_CX/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">Ubuntu下MySQL“root”用户远程登录配置</div>
+        <div class="article-nav-title">去TM的学习通</div>
       </a>
     
   </nav>
