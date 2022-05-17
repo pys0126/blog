@@ -45,21 +45,21 @@
   <entry>
     <title>使用Python在520给女友微信定时批量发送99条情话</title>
     <url>/cl27mwrhw0003u4jx7y748zzw-page1/</url>
-    <content><![CDATA[<h1 id="阿巴阿巴阿巴"><a href="#阿巴阿巴阿巴" class="headerlink" title="阿巴阿巴阿巴"></a>阿巴阿巴阿巴</h1><p>520到了（迟到的详解），如何大批量给女友发情话呢？首先得有情话吧，情话哪里来呢？我找到了一个情话api，请求地址：“<a href="https://chp.shadiao.app/api.php%E2%80%9D">https://chp.shadiao.app/api.php”</a> ，那么如何获取情话通过微信发送给女友呢？请看一下详细步骤</p>
+    <content><![CDATA[<h1 id="阿巴阿巴阿巴"><a href="#阿巴阿巴阿巴" class="headerlink" title="阿巴阿巴阿巴"></a>阿巴阿巴阿巴</h1><p>520 到了（迟到的详解），如何大批量给女友发情话呢？首先得有情话吧，情话哪里来呢？我找到了一个情话 api，请求地址：“<a href="https://api.shadiao.app/chp%E2%80%9D">https://api.shadiao.app/chp”</a> ，那么如何获取情话通过微信发送给女友呢？请看一下详细步骤</p>
 <span id="more"></span>
 
-<h1 id="请求情话API"><a href="#请求情话API" class="headerlink" title="请求情话API"></a>请求情话API</h1><p>首先得导入<strong>Requests</strong>库，如果没有在cmd安装：<code>pip3 install requests</code>， 然后先创建一个空列表content用于存储情话，创建一个Sessions用于持续访问（在这里其实没用），再将网址赋值给url变量，因为该api使用GET请求，所以使用get方法请求这个api地址，然后用列表的addend方法保存进content，最后自定义一个函数封装，这里我自定义一个parse函数</p>
+<h1 id="请求情话-API"><a href="#请求情话-API" class="headerlink" title="请求情话 API"></a>请求情话 API</h1><p>首先得导入<strong>Requests</strong>库，如果没有在 cmd 安装：<code>pip3 install requests</code>， 然后先创建一个空列表 content 用于存储情话，创建一个 Sessions 用于持续访问（在这里其实没用），再将网址赋值给 url 变量，因为该 api 使用 GET 请求，所以使用 get 方法请求这个 api 地址，然后用列表的 addend 方法保存进 content，最后自定义一个函数封装，这里我自定义一个 parse 函数</p>
 <pre><code class="python">import requests
 
 content = []
 
 def parse():
     Sessions = requests.session()
-    url = &quot;https://chp.shadiao.app/api.php&quot;
+    url = &quot;https://api.shadiao.app/chp&quot;
     re = Sessions.get(url=url)
-    content.append(re.text)
+    content.append(re.json()[&quot;data&quot;][&quot;text&quot;])
 </code></pre>
-<h1 id="发送微信消息"><a href="#发送微信消息" class="headerlink" title="发送微信消息"></a>发送微信消息</h1><p>导入itchat库提供的微信接口来查找好友并发送消息（该库需要通过pip安装），然后用auto_login方法登录微信，然后添加hotReload参数并赋值为True用于存储登录信息，然后用search_friends方法查找你女友的备注名称并赋值给user，然后用send方法来发送消息，该方法第一个参数是需要发送的信息也就是content列表中的情话，再填入一个toUserName参数为需要发送给谁也就是user的信息，但是user的信息的是一个列表套字典有很多参数，我们只需要第一个字典中的UserName的值：<code>user[0][&quot;UserName&quot;]</code>，最后自定义一个函数封装，这里我自定义一个sen_msg函数，但是需要设置一个获取列表下标的参数，我这里设置为size，因为后面需要循环发送99条，不可能发个情话列表过去吧，所以发送的消息应为：<code>content[size]</code></p>
+<h1 id="发送微信消息"><a href="#发送微信消息" class="headerlink" title="发送微信消息"></a>发送微信消息</h1><p>导入 itchat 库提供的微信接口来查找好友并发送消息（该库需要通过 pip 安装），然后用 auto_login 方法登录微信，然后添加 hotReload 参数并赋值为 True 用于存储登录信息，然后用 search_friends 方法查找你女友的备注名称并赋值给 user，然后用 send 方法来发送消息，该方法第一个参数是需要发送的信息也就是 content 列表中的情话，再填入一个 toUserName 参数为需要发送给谁也就是 user 的信息，但是 user 的信息的是一个列表套字典有很多参数，我们只需要第一个字典中的 UserName 的值：<code>user[0][&quot;UserName&quot;]</code>，最后自定义一个函数封装，这里我自定义一个 sen_msg 函数，但是需要设置一个获取列表下标的参数，我这里设置为 size，因为后面需要循环发送 99 条，不可能发个情话列表过去吧，所以发送的消息应为：<code>content[size]</code></p>
 <pre><code class="python">import itchat
 
 def sen_msg(size):
@@ -67,13 +67,13 @@ def sen_msg(size):
     user = itchat.search_friends(&quot;这里为你女友的备注&quot;)
     itchat.send(content[size], toUserName=user[0][&quot;UserName&quot;])
 </code></pre>
-<h1 id="启动函数"><a href="#启动函数" class="headerlink" title="启动函数"></a>启动函数</h1><p>用for循环请求99次api，将99条情话存入content，并通过微信发送给女友，最后自定义一个函数封装，这里我自定义一个sen_msg函数</p>
+<h1 id="启动函数"><a href="#启动函数" class="headerlink" title="启动函数"></a>启动函数</h1><p>用 for 循环请求 99 次 api，将 99 条情话存入 content，并通过微信发送给女友，最后自定义一个函数封装，这里我自定义一个 sen_msg 函数</p>
 <pre><code class="python">def run():
     for i in range(99):
         parse()
         sen_msg(size=i)
 </code></pre>
-<h1 id="定时发送"><a href="#定时发送" class="headerlink" title="定时发送"></a>定时发送</h1><p>这里导入一个schedule第三方库（该库需要通过pip安装），该库是个调度器，我们用它来创建一个定时任务，用<code>every().thursday.at(&quot;13:14&quot;).do(run)</code>方法在星期五的13点14分运行run函数，然后用run_pending方法运行在while循环中并每秒检查一次时间，所以需要导入time，用sleep方法等待一秒</p>
+<h1 id="定时发送"><a href="#定时发送" class="headerlink" title="定时发送"></a>定时发送</h1><p>这里导入一个 schedule 第三方库（该库需要通过 pip 安装），该库是个调度器，我们用它来创建一个定时任务，用<code>every().thursday.at(&quot;13:14&quot;).do(run)</code>方法在星期五的 13 点 14 分运行 run 函数，然后用 run_pending 方法运行在 while 循环中并每秒检查一次时间，所以需要导入 time，用 sleep 方法等待一秒</p>
 <pre><code class="python">import schedule
 import time
 
@@ -82,7 +82,7 @@ while True:
     schedule.run_pending()
     time.sleep(1)
 </code></pre>
-<h1 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h1><p>因为运行sen_msg函数时会登录微信一次，但是在定时的那个时间不一定在电脑前，所以我们将<code>itchat.auto_login(hotReload=True)</code>写在开头，也就是运行该脚本的时候就登录一次，<code>hotReload=True</code>会保存我的登录信息</p>
+<h1 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h1><p>因为运行 sen_msg 函数时会登录微信一次，但是在定时的那个时间不一定在电脑前，所以我们将<code>itchat.auto_login(hotReload=True)</code>写在开头，也就是运行该脚本的时候就登录一次，<code>hotReload=True</code>会保存我的登录信息</p>
 <pre><code class="python">import requests
 import schedule
 import itchat
@@ -94,9 +94,9 @@ itchat.auto_login(hotReload=True)  # hotReload=True用于存储登录信息
 
 # 请求情话api
 def parse():
-    url = &quot;https://chp.shadiao.app/api.php&quot;
+    url = &quot;https://api.shadiao.app/chp&quot;
     re = Sessions.get(url=url)
-    content.append(re.text)
+    content.append(re.json()[&quot;data&quot;][&quot;text&quot;])
 
 # 发送微信消息
 def sen_msg(size):
@@ -115,7 +115,7 @@ while True:
     schedule.run_pending()
     time.sleep(1)
 </code></pre>
-<p><strong>最终效果</strong>，<a href="https://github.com/pys0126/Python/blob/master/love.py">GitHub地址</a><br><img src="https://img-blog.csdnimg.cn/20210522184007984.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTQxNDQzMw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p><strong>最终效果</strong>，<a href="https://github.com/pys0126/Python/blob/master/love.py">GitHub 地址</a><br><img src="https://img-blog.csdnimg.cn/20210522184007984.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTQxNDQzMw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
 ]]></content>
       <categories>
         <category>Python</category>
