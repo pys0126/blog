@@ -15,21 +15,20 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>Python网易职教云（MooC）刷课 |  UodRad的博客</title>
+      <title>去TM的学习通 |  UodRad的博客</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="https://cdn.lovepp.xyz/blog/avatar.png" />
        
 <link rel="stylesheet" href="/dist/main.css">
 
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
-      />
+      
+<link rel="stylesheet" href="/css/fonts/remixicon.css">
+
       
 <link rel="stylesheet" href="/css/custom.css">
  
-      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
        
  
 
@@ -59,7 +58,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-Fuck-Ivce"
+  id="post-Fuck_CX"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -70,7 +69,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Python网易职教云（MooC）刷课
+  去TM的学习通
 </h1>
  
 
@@ -78,8 +77,8 @@
     </header>
      
     <div class="article-meta">
-      <a href="/cl27mwrhj0001u4jxcisd61a4-Fuck-Ivce/" class="article-date">
-  <time datetime="2022-01-08T09:45:24.000Z" itemprop="datePublished">2022-01-08</time>
+      <a href="/cl603xp4z000326jxcs154e02-Fuck_CX/" class="article-date">
+  <time datetime="2021-01-31T18:17:49.000Z" itemprop="datePublished">2021-02-01</time>
 </a> 
   <div class="article-category">
     <a class="article-category-link" href="/categories/Python/">Python</a> / <a class="article-category-link" href="/categories/Python/%E7%88%AC%E8%99%AB/">爬虫</a>
@@ -90,7 +89,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">314</span>
+            <span class="post-count">225</span>
         </span>
     </span>
 
@@ -114,35 +113,26 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="Fuck-MooC-Py"><a href="#Fuck-MooC-Py" class="headerlink" title="Fuck-MooC-Py"></a>Fuck-MooC-Py</h1><p>利用Python实现网易职教云（MooC）自动刷课和自动查题，代码位于：</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://e.coding.net/darkabyss/fuck-icve/Fuck-Icve.git">Fuck-MooC-Py（国内访问）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/pys0126/Fuck-Icve.git">Fuck-MooC-Py（国外访问）</a></li>
-</ul>
-<p>目前实现的功能：</p>
-<ul>
-<li>过PPT</li>
-<li>自动查题</li>
-</ul>
-<p>预计实现的功能：</p>
-<ul>
-<li>自动答题</li>
-<li><del>刷视频</del>（没研究好视频的反爬机制）</li>
-</ul>
+  <p><strong>仅支持CQCIVC学院</strong>，目前的功能：过PPT任务，视频任务（16倍播放需自己设置网课扩展），捕获异常界面要求输入的验证码</p>
 <span id="more"></span>
 
-<h1 id="1-效果"><a href="#1-效果" class="headerlink" title="1.效果"></a>1.效果</h1><p><strong>自动查题：</strong><br><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/HJO%5BTUO%7BZ%25K%7B_%60B4TD%7B%40PUO.png!vip" alt="自动查题"></p>
-<p><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/YL0%252E(%25UC%5BI%24%7DRTW%7DO)L37.png!vip" alt="答题分数"></p>
-<p><strong>过PPT：</strong><br><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/QQ%E6%88%AA%E5%9B%BE20220108175414.png" alt="过ppt"></p>
-<h1 id="2-使用"><a href="#2-使用" class="headerlink" title="2.使用"></a>2.使用</h1><h2 id="2-1-修改必须参数"><a href="#2-1-修改必须参数" class="headerlink" title="2.1 修改必须参数"></a>2.1 修改必须参数</h2><p>下图是需要修改的参数：<br><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/QQ%E6%88%AA%E5%9B%BE20220108192758.png" alt="参数"></p>
-<p><strong>chatiba_cookie：</strong></p>
-<p>去<a target="_blank" rel="noopener" href="https://chatiba.com/">查题吧</a>注册一个账户，然后登录在查题吧主页面按F12找到网络选项然后刷新一次网页，点击第一个包，找到cookie，将它的值复制下来填入脚本相应位置。<br><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/QQ%E5%9B%BE%E7%89%8720220108195651.png" alt="chatiba_cookie"></p>
-<p><strong>k_user和k_pwd：</strong><br>就是你的职教云账号和密码，将其填入脚本相应位置。</p>
-<h2 id="2-2-运行"><a href="#2-2-运行" class="headerlink" title="2.2 运行"></a>2.2 运行</h2><p>用python运行脚本后会提示你填入验证码，验证码会在脚本执行的时候保存到脚本当前目录下，名称为：<code>verifycode.png</code>，填入验证码后就可以按照自己的需求选择课程了，如图：</p>
-<p><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/QQ%E6%88%AA%E5%9B%BE20220108174641.png" alt="验证码"></p>
-<p><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/PL_3%60%25U_9W0I%7DFPR3PY~YSE.png" alt="运行"></p>
-<p>上图可以看到默认是启用了自动保存查询答案，想要相应的功能将其取消注释就行，最后两个功能可以配合使用，如图：</p>
-<p><img src="https://cdn.lovepp.xyz/blog/Fuck-Icve/1O%60R%40%248HAM61UG1%5DYA7J5.png" alt="配合"></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/pys0126/Fuck_CX/archive/main.zip">下载地址</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/pys0126/Fuck_CX">项目地址</a></p>
+<h1 id="前提需要"><a href="#前提需要" class="headerlink" title="前提需要"></a>前提需要</h1><h2 id="安装Python3和相关依赖"><a href="#安装Python3和相关依赖" class="headerlink" title="安装Python3和相关依赖"></a>安装Python3和相关依赖</h2><ul>
+<li>安装Python3<ul>
+<li>Windows下载地址：<a target="_blank" rel="noopener" href="https://www.python.org/downloads/release/python-379/">https://www.python.org/downloads/release/python-379/</a></li>
+</ul>
+</li>
+<li>安装依赖：<ul>
+<li>在命令行窗口运行<code>pip3 install -r requirements.txt</code><h2 id="下载Edge浏览器的webdriver"><a href="#下载Edge浏览器的webdriver" class="headerlink" title="下载Edge浏览器的webdriver"></a>下载Edge浏览器的webdriver</h2></li>
+</ul>
+</li>
+<li>在Edge浏览器输入edge://version/查看版本，然后下载<strong>对应版本的Webdriver</strong></li>
+<li>Webdriver下载地址：<a target="_blank" rel="noopener" href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/</a><h2 id="下载网课扩展"><a href="#下载网课扩展" class="headerlink" title="下载网课扩展"></a>下载网课扩展</h2></li>
+<li>下载地址：<a target="_blank" rel="noopener" href="https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip">https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip</a> （如何添加edge扩展自行百度）<h2 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h2></li>
+<li>1、在脚本12行-14行设置好Webdriver路径，手机号，密码</li>
+<li>2、在脚本路径下按住Shift+鼠标右键打开PowerShell，运行<code>python &#39;.\fuck_cx(requests+selenium).py&#39;</code></li>
+</ul>
  
       <!-- reward -->
       
@@ -213,7 +203,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.uodrad.top/cl27mwrhj0001u4jxcisd61a4-Fuck-Ivce/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.uodrad.top/cl603xp4z000326jxcs154e02-Fuck_CX/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -226,19 +216,19 @@
    
   <nav class="article-nav">
     
-      <a href="/cl27mwrvt0024u4jx87b394tx-2022-4-20/" class="article-nav-link">
+      <a href="/cl603xp5o000926jx52pi3qc9-page1/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            华为HCIA（Big Data）培训记录
+            使用Python在520给女友微信定时批量发送99条情话
           
         </div>
       </a>
     
     
-      <a href="/cl27mwrij0009u4jx3q6yavoh-page3/" class="article-nav-link">
+      <a href="/cl603xp8q002126jx83s573y1-page8/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">填安装最新版本Kali-Linux的坑</div>
+        <div class="article-nav-title">Manjaro[KDE]安装到使用</div>
       </a>
     
   </nav>
@@ -249,7 +239,7 @@
   <div id="vcomments"></div>
 </div>
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script src="https://cdn.staticfile.org/valine/1.4.16/Valine.min.js"></script>
 <script>
   new Valine({
     el: "#vcomments",
@@ -453,12 +443,12 @@
   });
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+  href="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.css"
 />
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+<script src="https://cdn.staticfile.org/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js"></script>
 
 <script src="/dist/main.js"></script>
 
@@ -530,10 +520,10 @@
 
 </div>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="https://cdn.staticfile.org/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
 
 <script>
     function viewer_init() {
@@ -587,7 +577,8 @@
   });
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="https://cdn.staticfile.org/mathjax/2.7.7/MathJax.js"></script>
+<script src="https://cdn.staticfile.org/mathjax/2.7.7/config/TeX-AMS-MML_HTMLorMML-full.js"></script>
 <script>
   var ayerConfig = {
     mathjax: true,
@@ -611,7 +602,7 @@
 <!-- CodeCopy -->
  
 <link rel="stylesheet" href="/css/clipboard.css">
- <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+ <script src="https://cdn.staticfile.org/clipboard.js/2.0.10/clipboard.min.js"></script>
 <script>
   function wait(callback, seconds) {
     var timelag = null;
