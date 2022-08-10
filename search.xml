@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>华为HCIA（Big Data）培训记录</title>
-    <url>/cl603xp4l000126jx0ydf7i19-2022-4-20/</url>
+    <url>/2022/04/20/2022-4-20/</url>
     <content><![CDATA[<h1 id="大数据概述-amp-解决办法"><a href="#大数据概述-amp-解决办法" class="headerlink" title="大数据概述&amp;解决办法"></a>大数据概述&amp;解决办法</h1><h2 id="大数据的特征（5v-1c）"><a href="#大数据的特征（5v-1c）" class="headerlink" title="大数据的特征（5v+1c）"></a>大数据的特征（5v+1c）</h2><ul>
 <li>大量：数据量巨大，MB,GB,TB,PB</li>
 <li>多样：数据类型多样，数据来源多样 数据来源：服务器日志、网站浏览信息、社交<br>结构化数据：表格数据 平台、摄像头信息<br>半结构化数据：网页html、xml<br>非结构化数据：视频、音频、图片、文字</li>
@@ -637,7 +637,7 @@ DQL:数据查询语言
   </entry>
   <entry>
     <title>去TM的学习通</title>
-    <url>/cl603xp4z000326jxcs154e02-Fuck_CX/</url>
+    <url>/2021/02/01/Fuck_CX/</url>
     <content><![CDATA[<p><strong>仅支持CQCIVC学院</strong>，目前的功能：过PPT任务，视频任务（16倍播放需自己设置网课扩展），捕获异常界面要求输入的验证码</p>
 <span id="more"></span>
 
@@ -670,7 +670,7 @@ DQL:数据查询语言
   </entry>
   <entry>
     <title>Python网易职教云（MooC）刷课</title>
-    <url>/cl603xp5h000726jx0zeg6hlm-Fuck-Ivce/</url>
+    <url>/2022/01/08/Fuck-Ivce/</url>
     <content><![CDATA[<h1 id="Fuck-MooC-Py"><a href="#Fuck-MooC-Py" class="headerlink" title="Fuck-MooC-Py"></a>Fuck-MooC-Py</h1><p>利用Python实现网易职教云（MooC）自动刷课和自动查题，代码位于：</p>
 <ul>
 <li><a href="https://e.coding.net/darkabyss/fuck-icve/Fuck-Icve.git">Fuck-MooC-Py（国内访问）</a></li>
@@ -712,7 +712,7 @@ DQL:数据查询语言
   </entry>
   <entry>
     <title>使用Python在520给女友微信定时批量发送99条情话</title>
-    <url>/cl603xp5o000926jx52pi3qc9-page1/</url>
+    <url>/2021/12/17/page1/</url>
     <content><![CDATA[<h1 id="阿巴阿巴阿巴"><a href="#阿巴阿巴阿巴" class="headerlink" title="阿巴阿巴阿巴"></a>阿巴阿巴阿巴</h1><p>520 到了（迟到的详解），如何大批量给女友发情话呢？首先得有情话吧，情话哪里来呢？我找到了一个情话 api，请求地址：<a href="https://api.shadiao.app/chp">https://api.shadiao.app/chp</a> ,那么如何获取情话通过微信发送给女友呢？请看一下详细步骤</p>
 <span id="more"></span>
 
@@ -796,7 +796,7 @@ while True:
   </entry>
   <entry>
     <title>Ubuntu下MySQL“root”用户远程登录配置</title>
-    <url>/cl603xp5t000a26jx1uk62ugc-page2/</url>
+    <url>/2021/12/17/page2/</url>
     <content><![CDATA[<p>1.进入mysql命令行执行：</p>
 <pre><code class="shell">mysql&gt;GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;%&#39; IDENTIFIED BY &#39;你的密码&#39; WITH GRANT OPTION;
 mysql&gt;FLUSH PRIVILEGES;
@@ -821,7 +821,7 @@ mysql&gt;FLUSH PRIVILEGES;
   </entry>
   <entry>
     <title>填安装最新版本Kali-Linux的坑</title>
-    <url>/cl603xp60000d26jxdzjk1smu-page3/</url>
+    <url>/2021/12/17/page3/</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>1.安装20年后版本的Kali-Linux让我踩了好多“坑”，这篇文章能填上大部分的“坑”🤨… </p>
 <h1 id="一-Kali安装显示cdrom没挂载解决"><a href="#一-Kali安装显示cdrom没挂载解决" class="headerlink" title="一.Kali安装显示cdrom没挂载解决"></a>一.Kali安装显示cdrom没挂载解决</h1><p>1.查看/目录下是否有cdrom,如果没有mkdir cdrom,或者删除rm -rf cdrom ,重新mkdir cdrom </p>
 <p>2.执行blkid查看U盘的盘符是那个，带有kali live的为kali的镜像</p>
@@ -873,7 +873,7 @@ $ apt-get install ttf-wqy-microhei
   </entry>
   <entry>
     <title>安卓手机免Root安装拥有图形界面的Kali NetHunter</title>
-    <url>/cl603xp65000e26jx5sx87toj-page6/</url>
+    <url>/2020/07/24/page6/</url>
     <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h3 id="说明-：安卓版本小于安卓5-0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali-NetHunter是amr64内核。"><a href="#说明-：安卓版本小于安卓5-0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali-NetHunter是amr64内核。" class="headerlink" title="说明 ：安卓版本小于安卓5.0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali NetHunter是amr64内核。"></a>说明 ：安卓版本小于安卓5.0无法正常运行，安装完成后理论上可以运行所有Kali工具，Kali NetHunter是amr64内核。</h3><span id="more"></span>
 <p><a href="https://wws.lanzous.com/iVJzzf7j24h"><strong>PDF离线教程</strong> </a></p>
 <p><a href="https://wws.lanzous.com/iUpQXexj2ha">termux</a>（必须） </p>
@@ -975,7 +975,7 @@ root@localhost:~# sudo apt install kali-linux-default
   </entry>
   <entry>
     <title>Manjaro[KDE]安装到使用</title>
-    <url>/cl603xp8q002126jx83s573y1-page8/</url>
+    <url>/2020/10/28/page8/</url>
     <content><![CDATA[<h3 id="折腾基于Arch的Linux发行版：Manjaro-【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括英特尔-英伟达双显卡的驱动问题。"><a href="#折腾基于Arch的Linux发行版：Manjaro-【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括英特尔-英伟达双显卡的驱动问题。" class="headerlink" title="折腾基于Arch的Linux发行版：Manjaro 【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括英特尔+英伟达双显卡的驱动问题。"></a>折腾基于Arch的Linux发行版：Manjaro 【KDE桌面】，本文有一些我在安装和使用Manjaro中所遇到的问题和解决方案，包括<strong>英特尔+英伟达双显卡</strong>的驱动问题。</h3><span id="more"></span>
 
 <h1 id="1-安装前"><a href="#1-安装前" class="headerlink" title="1.安装前"></a>1.安装前</h1><p><strong>1.进入到grub界面，首先选择语言为Chinese–&gt;zh-CN</strong></p>
