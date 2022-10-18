@@ -3,11 +3,11 @@
   <title>UodRad的博客</title>
   
   <subtitle>一个菜鸡的日常记录</subtitle>
-  <link href="https://www.uodrad.top/atom.xml" rel="self"/>
+  <link href="https://www.uodrad.tk/atom.xml" rel="self"/>
   
-  <link href="https://www.uodrad.top/"/>
+  <link href="https://www.uodrad.tk/"/>
   <updated>2022-04-20T06:28:15.000Z</updated>
-  <id>https://www.uodrad.top/</id>
+  <id>https://www.uodrad.tk/</id>
   
   <author>
     <name>UodRad</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>华为HCIA（Big Data）培训记录</title>
-    <link href="https://www.uodrad.top/2022/04/20/2022-4-20/"/>
-    <id>https://www.uodrad.top/2022/04/20/2022-4-20/</id>
+    <link href="https://www.uodrad.tk/2022/04/20/2022-4-20/"/>
+    <id>https://www.uodrad.tk/2022/04/20/2022-4-20/</id>
     <published>2022-04-20T06:28:15.000Z</published>
     <updated>2022-04-20T06:28:15.000Z</updated>
     
@@ -35,19 +35,19 @@
     
     
     
-    <category term="大数据" scheme="https://www.uodrad.top/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    <category term="大数据" scheme="https://www.uodrad.tk/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
     
-    <category term="HCIA" scheme="https://www.uodrad.top/tags/HCIA/"/>
+    <category term="HCIA" scheme="https://www.uodrad.tk/tags/HCIA/"/>
     
-    <category term="大数据" scheme="https://www.uodrad.top/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    <category term="大数据" scheme="https://www.uodrad.tk/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
   </entry>
   
   <entry>
     <title>Python网易职教云（MooC）刷课</title>
-    <link href="https://www.uodrad.top/2022/01/08/Fuck-Ivce/"/>
-    <id>https://www.uodrad.top/2022/01/08/Fuck-Ivce/</id>
+    <link href="https://www.uodrad.tk/2022/01/08/Fuck-Ivce/"/>
+    <id>https://www.uodrad.tk/2022/01/08/Fuck-Ivce/</id>
     <published>2022-01-08T09:45:24.000Z</published>
     <updated>2022-01-08T09:45:24.000Z</updated>
     
@@ -70,21 +70,21 @@
     
     
     
-    <category term="Python" scheme="https://www.uodrad.top/categories/Python/"/>
+    <category term="Python" scheme="https://www.uodrad.tk/categories/Python/"/>
     
-    <category term="爬虫" scheme="https://www.uodrad.top/categories/Python/%E7%88%AC%E8%99%AB/"/>
+    <category term="爬虫" scheme="https://www.uodrad.tk/categories/Python/%E7%88%AC%E8%99%AB/"/>
     
     
-    <category term="Python" scheme="https://www.uodrad.top/tags/Python/"/>
+    <category term="Python" scheme="https://www.uodrad.tk/tags/Python/"/>
     
-    <category term="爬虫" scheme="https://www.uodrad.top/tags/%E7%88%AC%E8%99%AB/"/>
+    <category term="爬虫" scheme="https://www.uodrad.tk/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>填安装最新版本Kali-Linux的坑</title>
-    <link href="https://www.uodrad.top/2021/12/17/page3/"/>
-    <id>https://www.uodrad.top/2021/12/17/page3/</id>
+    <link href="https://www.uodrad.tk/2021/12/17/page3/"/>
+    <id>https://www.uodrad.tk/2021/12/17/page3/</id>
     <published>2021-12-17T06:54:25.000Z</published>
     <updated>2021-12-17T06:54:25.000Z</updated>
     
@@ -97,21 +97,21 @@
     
     
     
-    <category term="Linux" scheme="https://www.uodrad.top/categories/Linux/"/>
+    <category term="Linux" scheme="https://www.uodrad.tk/categories/Linux/"/>
     
-    <category term="Kali" scheme="https://www.uodrad.top/categories/Linux/Kali/"/>
+    <category term="Kali" scheme="https://www.uodrad.tk/categories/Linux/Kali/"/>
     
     
-    <category term="Linux" scheme="https://www.uodrad.top/tags/Linux/"/>
+    <category term="Linux" scheme="https://www.uodrad.tk/tags/Linux/"/>
     
-    <category term="Kali" scheme="https://www.uodrad.top/tags/Kali/"/>
+    <category term="Kali" scheme="https://www.uodrad.tk/tags/Kali/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu下MySQL“root”用户远程登录配置</title>
-    <link href="https://www.uodrad.top/2021/12/17/page2/"/>
-    <id>https://www.uodrad.top/2021/12/17/page2/</id>
+    <link href="https://www.uodrad.tk/2021/12/17/page2/"/>
+    <id>https://www.uodrad.tk/2021/12/17/page2/</id>
     <published>2021-12-17T06:50:20.000Z</published>
     <updated>2021-12-17T06:50:20.000Z</updated>
     
@@ -127,25 +127,25 @@
     
     
     
-    <category term="Linux" scheme="https://www.uodrad.top/categories/Linux/"/>
+    <category term="Linux" scheme="https://www.uodrad.tk/categories/Linux/"/>
     
-    <category term="Ubuntu" scheme="https://www.uodrad.top/categories/Linux/Ubuntu/"/>
+    <category term="Ubuntu" scheme="https://www.uodrad.tk/categories/Linux/Ubuntu/"/>
     
-    <category term="Mysql" scheme="https://www.uodrad.top/categories/Mysql/"/>
+    <category term="Mysql" scheme="https://www.uodrad.tk/categories/Mysql/"/>
     
     
-    <category term="Linux" scheme="https://www.uodrad.top/tags/Linux/"/>
+    <category term="Linux" scheme="https://www.uodrad.tk/tags/Linux/"/>
     
-    <category term="Ubuntu" scheme="https://www.uodrad.top/tags/Ubuntu/"/>
+    <category term="Ubuntu" scheme="https://www.uodrad.tk/tags/Ubuntu/"/>
     
-    <category term="Mysql" scheme="https://www.uodrad.top/tags/Mysql/"/>
+    <category term="Mysql" scheme="https://www.uodrad.tk/tags/Mysql/"/>
     
   </entry>
   
   <entry>
     <title>使用Python在520给女友微信定时批量发送99条情话</title>
-    <link href="https://www.uodrad.top/2021/12/17/page1/"/>
-    <id>https://www.uodrad.top/2021/12/17/page1/</id>
+    <link href="https://www.uodrad.tk/2021/12/17/page1/"/>
+    <id>https://www.uodrad.tk/2021/12/17/page1/</id>
     <published>2021-12-17T06:22:35.000Z</published>
     <updated>2021-12-17T06:22:35.000Z</updated>
     
@@ -154,21 +154,21 @@
     
     
     
-    <category term="Python" scheme="https://www.uodrad.top/categories/Python/"/>
+    <category term="Python" scheme="https://www.uodrad.tk/categories/Python/"/>
     
-    <category term="爬虫" scheme="https://www.uodrad.top/categories/Python/%E7%88%AC%E8%99%AB/"/>
+    <category term="爬虫" scheme="https://www.uodrad.tk/categories/Python/%E7%88%AC%E8%99%AB/"/>
     
     
-    <category term="Python" scheme="https://www.uodrad.top/tags/Python/"/>
+    <category term="Python" scheme="https://www.uodrad.tk/tags/Python/"/>
     
-    <category term="爬虫" scheme="https://www.uodrad.top/tags/%E7%88%AC%E8%99%AB/"/>
+    <category term="爬虫" scheme="https://www.uodrad.tk/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>去TM的学习通</title>
-    <link href="https://www.uodrad.top/2021/02/01/Fuck_CX/"/>
-    <id>https://www.uodrad.top/2021/02/01/Fuck_CX/</id>
+    <link href="https://www.uodrad.tk/2021/02/01/Fuck_CX/"/>
+    <id>https://www.uodrad.tk/2021/02/01/Fuck_CX/</id>
     <published>2021-01-31T18:17:49.000Z</published>
     <updated>2021-01-31T18:17:49.000Z</updated>
     
@@ -177,21 +177,21 @@
     
     
     
-    <category term="Python" scheme="https://www.uodrad.top/categories/Python/"/>
+    <category term="Python" scheme="https://www.uodrad.tk/categories/Python/"/>
     
-    <category term="爬虫" scheme="https://www.uodrad.top/categories/Python/%E7%88%AC%E8%99%AB/"/>
+    <category term="爬虫" scheme="https://www.uodrad.tk/categories/Python/%E7%88%AC%E8%99%AB/"/>
     
     
-    <category term="Python" scheme="https://www.uodrad.top/tags/Python/"/>
+    <category term="Python" scheme="https://www.uodrad.tk/tags/Python/"/>
     
-    <category term="爬虫" scheme="https://www.uodrad.top/tags/%E7%88%AC%E8%99%AB/"/>
+    <category term="爬虫" scheme="https://www.uodrad.tk/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>Manjaro[KDE]安装到使用</title>
-    <link href="https://www.uodrad.top/2020/10/28/page8/"/>
-    <id>https://www.uodrad.top/2020/10/28/page8/</id>
+    <link href="https://www.uodrad.tk/2020/10/28/page8/"/>
+    <id>https://www.uodrad.tk/2020/10/28/page8/</id>
     <published>2020-10-28T04:30:00.000Z</published>
     <updated>2020-10-28T04:30:00.000Z</updated>
     
@@ -200,25 +200,25 @@
     
     
     
-    <category term="Linux" scheme="https://www.uodrad.top/categories/Linux/"/>
+    <category term="Linux" scheme="https://www.uodrad.tk/categories/Linux/"/>
     
-    <category term="Manjaro" scheme="https://www.uodrad.top/categories/Linux/Manjaro/"/>
+    <category term="Manjaro" scheme="https://www.uodrad.tk/categories/Linux/Manjaro/"/>
     
     
-    <category term="Linux" scheme="https://www.uodrad.top/tags/Linux/"/>
+    <category term="Linux" scheme="https://www.uodrad.tk/tags/Linux/"/>
     
-    <category term="Manjaro" scheme="https://www.uodrad.top/tags/Manjaro/"/>
+    <category term="Manjaro" scheme="https://www.uodrad.tk/tags/Manjaro/"/>
     
-    <category term="双显卡" scheme="https://www.uodrad.top/tags/%E5%8F%8C%E6%98%BE%E5%8D%A1/"/>
+    <category term="双显卡" scheme="https://www.uodrad.tk/tags/%E5%8F%8C%E6%98%BE%E5%8D%A1/"/>
     
-    <category term="KDE桌面" scheme="https://www.uodrad.top/tags/KDE%E6%A1%8C%E9%9D%A2/"/>
+    <category term="KDE桌面" scheme="https://www.uodrad.tk/tags/KDE%E6%A1%8C%E9%9D%A2/"/>
     
   </entry>
   
   <entry>
     <title>安卓手机免Root安装拥有图形界面的Kali NetHunter</title>
-    <link href="https://www.uodrad.top/2020/07/24/page6/"/>
-    <id>https://www.uodrad.top/2020/07/24/page6/</id>
+    <link href="https://www.uodrad.tk/2020/07/24/page6/"/>
+    <id>https://www.uodrad.tk/2020/07/24/page6/</id>
     <published>2020-07-24T05:44:49.000Z</published>
     <updated>2020-07-24T05:44:49.000Z</updated>
     
@@ -227,18 +227,18 @@
     
     
     
-    <category term="Linux" scheme="https://www.uodrad.top/categories/Linux/"/>
+    <category term="Linux" scheme="https://www.uodrad.tk/categories/Linux/"/>
     
-    <category term="Kali" scheme="https://www.uodrad.top/categories/Linux/Kali/"/>
+    <category term="Kali" scheme="https://www.uodrad.tk/categories/Linux/Kali/"/>
     
-    <category term="安卓" scheme="https://www.uodrad.top/categories/%E5%AE%89%E5%8D%93/"/>
+    <category term="安卓" scheme="https://www.uodrad.tk/categories/%E5%AE%89%E5%8D%93/"/>
     
     
-    <category term="Linux" scheme="https://www.uodrad.top/tags/Linux/"/>
+    <category term="Linux" scheme="https://www.uodrad.tk/tags/Linux/"/>
     
-    <category term="Kali" scheme="https://www.uodrad.top/tags/Kali/"/>
+    <category term="Kali" scheme="https://www.uodrad.tk/tags/Kali/"/>
     
-    <category term="Android" scheme="https://www.uodrad.top/tags/Android/"/>
+    <category term="Android" scheme="https://www.uodrad.tk/tags/Android/"/>
     
   </entry>
   
