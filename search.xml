@@ -1,39 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>去TM的学习通</title>
-    <url>/2021/02/01/Fuck_CX/</url>
-    <content><![CDATA[<p><strong>仅支持CQCIVC学院</strong>，目前的功能：过PPT任务，视频任务（16倍播放需自己设置网课扩展），捕获异常界面要求输入的验证码</p>
-<span id="more"></span>
-
-<p><a href="https://github.com/pys0126/Fuck_CX/archive/main.zip">下载地址</a></p>
-<p><a href="https://github.com/pys0126/Fuck_CX">项目地址</a></p>
-<h1 id="前提需要"><a href="#前提需要" class="headerlink" title="前提需要"></a>前提需要</h1><h2 id="安装Python3和相关依赖"><a href="#安装Python3和相关依赖" class="headerlink" title="安装Python3和相关依赖"></a>安装Python3和相关依赖</h2><ul>
-<li>安装Python3<ul>
-<li>Windows下载地址：<a href="https://www.python.org/downloads/release/python-379/">https://www.python.org/downloads/release/python-379/</a></li>
-</ul>
-</li>
-<li>安装依赖：<ul>
-<li>在命令行窗口运行<code>pip3 install -r requirements.txt</code><h2 id="下载Edge浏览器的webdriver"><a href="#下载Edge浏览器的webdriver" class="headerlink" title="下载Edge浏览器的webdriver"></a>下载Edge浏览器的webdriver</h2></li>
-</ul>
-</li>
-<li>在Edge浏览器输入edge://version/查看版本，然后下载<strong>对应版本的Webdriver</strong></li>
-<li>Webdriver下载地址：<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/</a><h2 id="下载网课扩展"><a href="#下载网课扩展" class="headerlink" title="下载网课扩展"></a>下载网课扩展</h2></li>
-<li>下载地址：<a href="https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip">https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip</a> （如何添加edge扩展自行百度）<h2 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h2></li>
-<li>1、在脚本12行-14行设置好Webdriver路径，手机号，密码</li>
-<li>2、在脚本路径下按住Shift+鼠标右键打开PowerShell，运行<code>python &#39;.\fuck_cx(requests+selenium).py&#39;</code></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>爬虫</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python网易职教云（MooC）刷课</title>
     <url>/2022/01/08/Fuck-Ivce/</url>
     <content><![CDATA[<h1 id="Fuck-MooC-Py"><a href="#Fuck-MooC-Py" class="headerlink" title="Fuck-MooC-Py"></a>Fuck-MooC-Py</h1><p>利用Python实现网易职教云（MooC）自动刷课和自动查题，代码位于：</p>
@@ -76,28 +43,36 @@
       </tags>
   </entry>
   <entry>
-    <title>Ubuntu下MySQL“root”用户远程登录配置</title>
-    <url>/2021/12/17/page2/</url>
-    <content><![CDATA[<p>1.进入mysql命令行执行：</p>
-<pre><code class="shell">mysql&gt;GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;%&#39; IDENTIFIED BY &#39;你的密码&#39; WITH GRANT OPTION;
-mysql&gt;FLUSH PRIVILEGES;
-</code></pre>
-<p>2.然后修改mysql配置文件：vim /etc/mysql/mysql.conf.d/mysqld.cnf，找到并将bind-address =127.0.0.1（大概在44行）注释掉：</p>
-<pre><code class="shell">#bind-address           = 127.0.0.1
-</code></pre>
-<p>3.重启mysql服务，然后就可以远程登录了：</p>
-<pre><code class="shell">$ sudo service mysql restart
-</code></pre>
+    <title>去TM的学习通</title>
+    <url>/2021/02/01/Fuck_CX/</url>
+    <content><![CDATA[<p><strong>仅支持CQCIVC学院</strong>，目前的功能：过PPT任务，视频任务（16倍播放需自己设置网课扩展），捕获异常界面要求输入的验证码</p>
+<span id="more"></span>
+
+<p><a href="https://github.com/pys0126/Fuck_CX/archive/main.zip">下载地址</a></p>
+<p><a href="https://github.com/pys0126/Fuck_CX">项目地址</a></p>
+<h1 id="前提需要"><a href="#前提需要" class="headerlink" title="前提需要"></a>前提需要</h1><h2 id="安装Python3和相关依赖"><a href="#安装Python3和相关依赖" class="headerlink" title="安装Python3和相关依赖"></a>安装Python3和相关依赖</h2><ul>
+<li>安装Python3<ul>
+<li>Windows下载地址：<a href="https://www.python.org/downloads/release/python-379/">https://www.python.org/downloads/release/python-379/</a></li>
+</ul>
+</li>
+<li>安装依赖：<ul>
+<li>在命令行窗口运行<code>pip3 install -r requirements.txt</code><h2 id="下载Edge浏览器的webdriver"><a href="#下载Edge浏览器的webdriver" class="headerlink" title="下载Edge浏览器的webdriver"></a>下载Edge浏览器的webdriver</h2></li>
+</ul>
+</li>
+<li>在Edge浏览器输入edge://version/查看版本，然后下载<strong>对应版本的Webdriver</strong></li>
+<li>Webdriver下载地址：<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/</a><h2 id="下载网课扩展"><a href="#下载网课扩展" class="headerlink" title="下载网课扩展"></a>下载网课扩展</h2></li>
+<li>下载地址：<a href="https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip">https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip</a> （如何添加edge扩展自行百度）<h2 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h2></li>
+<li>1、在脚本12行-14行设置好Webdriver路径，手机号，密码</li>
+<li>2、在脚本路径下按住Shift+鼠标右键打开PowerShell，运行<code>python &#39;.\fuck_cx(requests+selenium).py&#39;</code></li>
+</ul>
 ]]></content>
       <categories>
-        <category>Linux</category>
-        <category>Ubuntu</category>
-        <category>Mysql</category>
+        <category>Python</category>
+        <category>爬虫</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
-        <tag>Ubuntu</tag>
-        <tag>Mysql</tag>
+        <tag>Python</tag>
+        <tag>爬虫</tag>
       </tags>
   </entry>
   <entry>
@@ -182,6 +157,31 @@ while True:
       <tags>
         <tag>Python</tag>
         <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu下MySQL“root”用户远程登录配置</title>
+    <url>/2021/12/17/page2/</url>
+    <content><![CDATA[<p>1.进入mysql命令行执行：</p>
+<pre><code class="shell">mysql&gt;GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;%&#39; IDENTIFIED BY &#39;你的密码&#39; WITH GRANT OPTION;
+mysql&gt;FLUSH PRIVILEGES;
+</code></pre>
+<p>2.然后修改mysql配置文件：vim /etc/mysql/mysql.conf.d/mysqld.cnf，找到并将bind-address =127.0.0.1（大概在44行）注释掉：</p>
+<pre><code class="shell">#bind-address           = 127.0.0.1
+</code></pre>
+<p>3.重启mysql服务，然后就可以远程登录了：</p>
+<pre><code class="shell">$ sudo service mysql restart
+</code></pre>
+]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Ubuntu</tag>
+        <tag>Mysql</tag>
       </tags>
   </entry>
   <entry>
