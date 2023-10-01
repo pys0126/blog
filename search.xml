@@ -43,39 +43,6 @@
       </tags>
   </entry>
   <entry>
-    <title>去TM的学习通</title>
-    <url>/2021/02/01/Fuck_CX/</url>
-    <content><![CDATA[<p><strong>仅支持CQCIVC学院</strong>，目前的功能：过PPT任务，视频任务（16倍播放需自己设置网课扩展），捕获异常界面要求输入的验证码</p>
-<span id="more"></span>
-
-<p><a href="https://github.com/pys0126/Fuck_CX/archive/main.zip">下载地址</a></p>
-<p><a href="https://github.com/pys0126/Fuck_CX">项目地址</a></p>
-<h1 id="前提需要"><a href="#前提需要" class="headerlink" title="前提需要"></a>前提需要</h1><h2 id="安装Python3和相关依赖"><a href="#安装Python3和相关依赖" class="headerlink" title="安装Python3和相关依赖"></a>安装Python3和相关依赖</h2><ul>
-<li>安装Python3<ul>
-<li>Windows下载地址：<a href="https://www.python.org/downloads/release/python-379/">https://www.python.org/downloads/release/python-379/</a></li>
-</ul>
-</li>
-<li>安装依赖：<ul>
-<li>在命令行窗口运行<code>pip3 install -r requirements.txt</code><h2 id="下载Edge浏览器的webdriver"><a href="#下载Edge浏览器的webdriver" class="headerlink" title="下载Edge浏览器的webdriver"></a>下载Edge浏览器的webdriver</h2></li>
-</ul>
-</li>
-<li>在Edge浏览器输入edge://version/查看版本，然后下载<strong>对应版本的Webdriver</strong></li>
-<li>Webdriver下载地址：<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/</a><h2 id="下载网课扩展"><a href="#下载网课扩展" class="headerlink" title="下载网课扩展"></a>下载网课扩展</h2></li>
-<li>下载地址：<a href="https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip">https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip</a> （如何添加edge扩展自行百度）<h2 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h2></li>
-<li>1、在脚本12行-14行设置好Webdriver路径，手机号，密码</li>
-<li>2、在脚本路径下按住Shift+鼠标右键打开PowerShell，运行<code>python &#39;.\fuck_cx(requests+selenium).py&#39;</code></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Python</category>
-        <category>爬虫</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用Python在520给女友微信定时批量发送99条情话</title>
     <url>/2021/12/17/page1/</url>
     <content><![CDATA[<h1 id="阿巴阿巴阿巴"><a href="#阿巴阿巴阿巴" class="headerlink" title="阿巴阿巴阿巴"></a>阿巴阿巴阿巴</h1><p>520 到了（迟到的详解），如何大批量给女友发情话呢？首先得有情话吧，情话哪里来呢？我找到了一个情话 api，请求地址：<a href="https://api.shadiao.app/chp">https://api.shadiao.app/chp</a> ,那么如何获取情话通过微信发送给女友呢？请看一下详细步骤</p>
@@ -160,6 +127,39 @@ while True:
       </tags>
   </entry>
   <entry>
+    <title>去TM的学习通</title>
+    <url>/2021/02/01/Fuck_CX/</url>
+    <content><![CDATA[<p><strong>仅支持CQCIVC学院</strong>，目前的功能：过PPT任务，视频任务（16倍播放需自己设置网课扩展），捕获异常界面要求输入的验证码</p>
+<span id="more"></span>
+
+<p><a href="https://github.com/pys0126/Fuck_CX/archive/main.zip">下载地址</a></p>
+<p><a href="https://github.com/pys0126/Fuck_CX">项目地址</a></p>
+<h1 id="前提需要"><a href="#前提需要" class="headerlink" title="前提需要"></a>前提需要</h1><h2 id="安装Python3和相关依赖"><a href="#安装Python3和相关依赖" class="headerlink" title="安装Python3和相关依赖"></a>安装Python3和相关依赖</h2><ul>
+<li>安装Python3<ul>
+<li>Windows下载地址：<a href="https://www.python.org/downloads/release/python-379/">https://www.python.org/downloads/release/python-379/</a></li>
+</ul>
+</li>
+<li>安装依赖：<ul>
+<li>在命令行窗口运行<code>pip3 install -r requirements.txt</code><h2 id="下载Edge浏览器的webdriver"><a href="#下载Edge浏览器的webdriver" class="headerlink" title="下载Edge浏览器的webdriver"></a>下载Edge浏览器的webdriver</h2></li>
+</ul>
+</li>
+<li>在Edge浏览器输入edge://version/查看版本，然后下载<strong>对应版本的Webdriver</strong></li>
+<li>Webdriver下载地址：<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/</a><h2 id="下载网课扩展"><a href="#下载网课扩展" class="headerlink" title="下载网课扩展"></a>下载网课扩展</h2></li>
+<li>下载地址：<a href="https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip">https://github.com/CodFrm/cxmooc-tools/releases/download/v2.5.0/cxmooc-tools.zip</a> （如何添加edge扩展自行百度）<h2 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h2></li>
+<li>1、在脚本12行-14行设置好Webdriver路径，手机号，密码</li>
+<li>2、在脚本路径下按住Shift+鼠标右键打开PowerShell，运行<code>python &#39;.\fuck_cx(requests+selenium).py&#39;</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Python</category>
+        <category>爬虫</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Ubuntu下MySQL“root”用户远程登录配置</title>
     <url>/2021/12/17/page2/</url>
     <content><![CDATA[<p>1.进入mysql命令行执行：</p>
@@ -182,58 +182,6 @@ mysql&gt;FLUSH PRIVILEGES;
         <tag>Linux</tag>
         <tag>Ubuntu</tag>
         <tag>Mysql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>填安装最新版本Kali-Linux的坑</title>
-    <url>/2021/12/17/page3/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>1.安装20年后版本的Kali-Linux让我踩了好多“坑”，这篇文章能填上大部分的“坑”🤨… </p>
-<h1 id="一-Kali安装显示cdrom没挂载解决"><a href="#一-Kali安装显示cdrom没挂载解决" class="headerlink" title="一.Kali安装显示cdrom没挂载解决"></a>一.Kali安装显示cdrom没挂载解决</h1><p>1.查看/目录下是否有cdrom,如果没有mkdir cdrom,或者删除rm -rf cdrom ,重新mkdir cdrom </p>
-<p>2.执行blkid查看U盘的盘符是那个，带有kali live的为kali的镜像</p>
-<p>3.当前安装的环境镜像U盘设备为/dev/sdb1</p>
-<p>4.执行挂载命令：<span id="more"></span></p>
-<p>如果sdb1的type 为vfat,则为<code>mount -t vfat /dev/sdb1 /cdrom</code></p>
-<p>如果sdb1的type 为iso9660,则<code>mount -t iso9660 /dev/sdb1 /cdrom</code></p>
-<p>5.mount 之后可以cd /cdrom，查看文件是否挂载</p>
-<p>6.exit退出</p>
-<p>注：blkid可以看到type类型，并且命令执行报无效参数，表示没写对，而非命令不存在。另外进入shell的快捷键为ALT+F2,或者Crtl+ALT+F2，Crtl+ATL+F5回到安装界面</p>
-<p>或者根据拔插U盘判断设备是哪个</p>
-<h1 id="二-声音设备显示伪输出"><a href="#二-声音设备显示伪输出" class="headerlink" title="二.声音设备显示伪输出"></a>二.声音设备显示伪输出</h1><p>终端输入以下命令：</p>
-<pre><code class="plain">$ echo “options snd-hda-intel dmic_detect=0” | sudo tee -a /etc/modprobe.d/alsa-base.conf
-$ echo “blacklist snd_soc_skl” | sudo tee -a /etc/modprobe.d/blacklist.conf
-</code></pre>
-<h1 id="三-安装Deepin-wine的QQ，微信"><a href="#三-安装Deepin-wine的QQ，微信" class="headerlink" title="三.安装Deepin-wine的QQ，微信"></a>三.安装Deepin-wine的QQ，微信</h1><p>添加32位支持：</p>
-<pre><code class="shell">$ sudo dpkg --add-architecture i386 
-</code></pre>
-<p>添加deepin的软件源：</p>
-<pre><code class="plain">deb http://mirrors.aliyun.com/deepin panda main contrib non-free
-deb-src http://mirrors.aliyun.com/deepin panda main contrib non-free
-</code></pre>
-<p>然后更新软件源，提示签名验证错误，执行：</p>
-<pre><code class="plain">$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 提示的公钥
-</code></pre>
-<p>安装deepin-win:</p>
-<pre><code class="plain">$ apt install deepin-wine --fix-missing
-</code></pre>
-<p>安装中文字体:</p>
-<pre><code class="plain">$ apt-get install xfonts-intl-chinese
-$ apt-get install ttf-wqy-microhei
-</code></pre>
-<p>安装QQ和微信:</p>
-<pre><code class="plain">$ sudo apt install deepin.com.qq.im deepin.com.wechat
-</code></pre>
-<p>注：安装Toplcons Redux以解决最小化消失的问题，如果执行微信过后出现黑块请参考：<br><a href="https://www.cnblogs.com/lanqie/p/11287057.html#2621990085">https://www.cnblogs.com/lanqie/p/11287057.html#2621990085</a></p>
-<p>补充作者添加runrun.sh文件后执行以下命令：</p>
-<pre><code class="shell">$ sudo chmod +x /opt/deepinwine/apps/Deepin-WeChat/runrun.sh
-</code></pre>
-]]></content>
-      <categories>
-        <category>Linux</category>
-        <category>Kali</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Kali</tag>
       </tags>
   </entry>
   <entry>
@@ -334,8 +282,60 @@ root@localhost:~# sudo apt install kali-linux-default
       </categories>
       <tags>
         <tag>Linux</tag>
-        <tag>Kali</tag>
         <tag>Android</tag>
+        <tag>Kali</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>填安装最新版本Kali-Linux的坑</title>
+    <url>/2021/12/17/page3/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>1.安装20年后版本的Kali-Linux让我踩了好多“坑”，这篇文章能填上大部分的“坑”🤨… </p>
+<h1 id="一-Kali安装显示cdrom没挂载解决"><a href="#一-Kali安装显示cdrom没挂载解决" class="headerlink" title="一.Kali安装显示cdrom没挂载解决"></a>一.Kali安装显示cdrom没挂载解决</h1><p>1.查看/目录下是否有cdrom,如果没有mkdir cdrom,或者删除rm -rf cdrom ,重新mkdir cdrom </p>
+<p>2.执行blkid查看U盘的盘符是那个，带有kali live的为kali的镜像</p>
+<p>3.当前安装的环境镜像U盘设备为/dev/sdb1</p>
+<p>4.执行挂载命令：<span id="more"></span></p>
+<p>如果sdb1的type 为vfat,则为<code>mount -t vfat /dev/sdb1 /cdrom</code></p>
+<p>如果sdb1的type 为iso9660,则<code>mount -t iso9660 /dev/sdb1 /cdrom</code></p>
+<p>5.mount 之后可以cd /cdrom，查看文件是否挂载</p>
+<p>6.exit退出</p>
+<p>注：blkid可以看到type类型，并且命令执行报无效参数，表示没写对，而非命令不存在。另外进入shell的快捷键为ALT+F2,或者Crtl+ALT+F2，Crtl+ATL+F5回到安装界面</p>
+<p>或者根据拔插U盘判断设备是哪个</p>
+<h1 id="二-声音设备显示伪输出"><a href="#二-声音设备显示伪输出" class="headerlink" title="二.声音设备显示伪输出"></a>二.声音设备显示伪输出</h1><p>终端输入以下命令：</p>
+<pre><code class="plain">$ echo “options snd-hda-intel dmic_detect=0” | sudo tee -a /etc/modprobe.d/alsa-base.conf
+$ echo “blacklist snd_soc_skl” | sudo tee -a /etc/modprobe.d/blacklist.conf
+</code></pre>
+<h1 id="三-安装Deepin-wine的QQ，微信"><a href="#三-安装Deepin-wine的QQ，微信" class="headerlink" title="三.安装Deepin-wine的QQ，微信"></a>三.安装Deepin-wine的QQ，微信</h1><p>添加32位支持：</p>
+<pre><code class="shell">$ sudo dpkg --add-architecture i386 
+</code></pre>
+<p>添加deepin的软件源：</p>
+<pre><code class="plain">deb http://mirrors.aliyun.com/deepin panda main contrib non-free
+deb-src http://mirrors.aliyun.com/deepin panda main contrib non-free
+</code></pre>
+<p>然后更新软件源，提示签名验证错误，执行：</p>
+<pre><code class="plain">$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 提示的公钥
+</code></pre>
+<p>安装deepin-win:</p>
+<pre><code class="plain">$ apt install deepin-wine --fix-missing
+</code></pre>
+<p>安装中文字体:</p>
+<pre><code class="plain">$ apt-get install xfonts-intl-chinese
+$ apt-get install ttf-wqy-microhei
+</code></pre>
+<p>安装QQ和微信:</p>
+<pre><code class="plain">$ sudo apt install deepin.com.qq.im deepin.com.wechat
+</code></pre>
+<p>注：安装Toplcons Redux以解决最小化消失的问题，如果执行微信过后出现黑块请参考：<br><a href="https://www.cnblogs.com/lanqie/p/11287057.html#2621990085">https://www.cnblogs.com/lanqie/p/11287057.html#2621990085</a></p>
+<p>补充作者添加runrun.sh文件后执行以下命令：</p>
+<pre><code class="shell">$ sudo chmod +x /opt/deepinwine/apps/Deepin-WeChat/runrun.sh
+</code></pre>
+]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>Kali</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Kali</tag>
       </tags>
   </entry>
   <entry>
